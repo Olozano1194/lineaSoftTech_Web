@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "@heroicons/react/16/solid";
 
 const Hero = () => {
     return (
-        <section className="flex flex-col ">
+        <section className="bg-text-secondary/4 flex flex-col pb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-btn-primary/10 text-btn-primary text-sm font-bold uppercase tracking-wider w-fit">
                 <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-btn-primary opacity-75"></span>
