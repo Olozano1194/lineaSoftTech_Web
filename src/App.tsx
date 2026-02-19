@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 // Page
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 // Layouts
 import LayoutAdmin from "./layouts/LayoutAdmin";
 // Error
@@ -13,7 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Navigate to='/layoutAdmin' />} />
       <Route path="layoutAdmin" element={<LayoutAdmin />}>
-        <Route index element={<Home />} />
+        <Route index element={<HomePage />} />
       </Route>
       <Route path="*" element={<Error404 />} />         
     </Routes>

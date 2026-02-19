@@ -19,7 +19,7 @@ const Navbar = () => {
     
     return (
         <Disclosure as="nav" className="relative w-full text-text-primary border-b border-slate-200/60"> 
-                <div className="w-full sm:pr-2 lg:px-8">
+                <div className="w-full sm:pr-2 lg:px-16">
                     <div className="flex h-16 items-center justify-between">
                         {/* Logo y nombre */}
                         <div className="flex gap-1 pl-2 w-full sm:items-stretch lg:pl-0">
