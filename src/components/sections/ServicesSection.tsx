@@ -2,7 +2,7 @@
 
 const ServicesSection = () => {
     return (
-        <section className="w-full bg-white mt-8 pt-8">
+        <section className="w-full bg-white pt-8 pb-8">
             <div className="mb-12 text-center">
                 <h2 className="font-black mb-4 text-text-primary text-3xl">Servicios Especializados</h2>
                 <p className="max-auto text-text-secondary text-sm md:text-lg">
