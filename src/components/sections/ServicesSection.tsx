@@ -2,11 +2,11 @@
 
 const ServicesSection = () => {
     return (
-        <section className="w-full bg-white pt-8 pb-8">
+        <section className="w-full bg-white pt-8 py-15">
             <div className="mb-12 text-center">
-                <h2 className="font-black mb-4 text-text-primary text-3xl">Servicios Especializados</h2>
+                <h2 className="font-black mb-4 text-text-primary text-3xl">Nuestros Servicios</h2>
                 <p className="max-auto text-text-secondary text-sm md:text-lg">
-                    Diseñamos soluciones tecnológicas que resuelven problemas reales y generan impacto medible.
+                    Ayudamos a emprendedores y pequeños negocios a digitalizar sus procesos con soluciones prácticas y funcionales.
                 </p>
             </div>
             <article className="gap-6 grid grid-cols-1 mt-8 pt-4 md:grid-cols-2 lg:grid-cols-4">
@@ -15,11 +15,21 @@ const ServicesSection = () => {
                 <div className="w-12 h-12 rounded-lg bg-btn-primary/10 text-btn-primary flex items-center justify-center mb-6 group-hover:bg-btn-primary group-hover:text-white transition-colors">
                     <span>Icon</span>
                 </div>
-                <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Landing Pages</h3>
-                <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Sitios de alta conversión optimizados para SEO y experiencia de usuario.</p>
+                <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Landing Pages y Páginas Web</h3>
+                <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Diseñamos páginas web modernas y funcionales para que tu negocio tenga presencia profesional en internet.</p>
                 <ul className="space-y-2 text-sm font-medium text-text-footer-primary">
-                    <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>Diseño Responsivo</li>
-                    <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>Copywriting Persuasivo</li>
+                    <li className="flex items-center gap-2">
+                        <span className="text-xs text-btn-primary"></span>
+                        Diseño adaptable a celular y computadoras
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="text-xs text-btn-primary"></span>
+                        Formularios de contecto y WhatsApp
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="text-xs text-btn-primary"></span>
+                        Estructura clara y profesional
+                    </li>
                 </ul>
                 </article>
                 {/* Software a medida */}
@@ -28,11 +38,21 @@ const ServicesSection = () => {
                     <div className="w-12 h-12 rounded-lg bg-btn-primary/10 text-btn-primary flex items-center justify-center mb-6 group-hover:bg-btn-primary group-hover:text-white transition-colors">
                         <span>Icon</span>
                     </div>
-                    <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Software a Medida</h3>
-                    <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Desarrollo de aplicaciones web y móviles escalables y robustas.</p>
+                    <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Desarrollo de Aplicaciones Web</h3>
+                    <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Creamos sistemas web básicos para digitalizar procesos como inventarios, registros o gestión interna.</p>
                     <ul className="space-y-2 text-sm font-medium text-text-footer-primary">
-                        <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>Arquitectura</li>
-                        <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>UX/UI Profesional</li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Panel administrativo sencillo
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Base de datos estructurada
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Interfaz clara y funcional
+                        </li>
                     </ul>
                 </article>
                 {/* Automatizacion */}
@@ -41,11 +61,21 @@ const ServicesSection = () => {
                     <div className="w-12 h-12 rounded-lg bg-btn-primary/10 text-btn-primary flex items-center justify-center mb-6 group-hover:bg-btn-primary group-hover:text-white transition-colors">
                         <span>Icon</span>
                     </div>
-                    <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Automatización</h3>
-                    <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Optimización de flujos de trabajo con IA y herramientas no-code.</p>
+                    <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Automatización Básica de Procesos</h3>
+                    <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Implementamos soluciones simples para reducir tareas manuales y mejorar la organización.</p>
                     <ul className="space-y-2 text-sm font-medium text-text-footer-primary">
-                        <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>Integraciones API</li>
-                        <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>Ahorro de tiempo</li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Formularios automatizados
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Integraciones básicas entre herramientas
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Organización digital de información
+                        </li>
                     </ul>
                 </article>
                 {/* Soporte */}
@@ -54,11 +84,21 @@ const ServicesSection = () => {
                     <div className="w-12 h-12 rounded-lg bg-btn-primary/10 text-btn-primary flex items-center justify-center mb-6 group-hover:bg-btn-primary group-hover:text-white transition-colors">
                         <span>Icon</span>
                     </div>
-                    <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Soporte TI</h3>
-                    <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Mantenimiento preventivo y asistencia técnica 24/7 para tu empresa.</p>
+                    <h3 className="text-text-primary text-xl font-bold mb-3 md:text-2xl">Soporte Técnico y Mantenimiento</h3>
+                    <p className="text-text-secondary text-sm leading-relaxed mb-4 md:text-lg">Brindamos soporte técnico para equipos de escritorio y portátiles en hogares y pequeños negocios.</p>
                     <ul className="space-y-2 text-sm font-medium text-text-footer-primary">
-                        <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>Seguridad 24/7</li>
-                        <li className="flex items-center gap-2"><span className="text-xs text-btn-primary"></span>Consultoría</li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            mantenimiento preventivo y correctivo
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Formateo e instalación de sistemas operativos
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-xs text-btn-primary"></span>
+                            Instalación de impresoras y periféricos
+                        </li>                        
                     </ul>
                 </article>
             </article>            
