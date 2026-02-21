@@ -11,7 +11,7 @@ const Hero = () => {
                 </span>
                 Soluciones Tecnológicas accesibles
             </div>
-            <section className="mx-auto gap-12 items-center grid lg:grid-cols-2">
+            <section className="gap-12 items-center grid lg:grid-cols-2">
                 {/* article */}
                 <article className="mt-10 lg:mt-0">
                     <h1 className="font-black leading-[1.1] text-4xl text-text-primary tracking-tight lg:text-7xl">
