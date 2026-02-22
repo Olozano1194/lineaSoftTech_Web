@@ -3,7 +3,7 @@ import { MdOutlineEmail, MdOutlinePhone, MdOutlineCircle } from "react-icons/md"
 
 const ContactSection = () => {
     return (
-        <section className="bg-white flex flex-col py-15 relative overflow-hidden md:flex-row lg:gap-x-8 lg:items-center lg:justify-center">
+        <section className="bg-white flex flex-col py-15 relative overflow-hidden md:flex-row px-3.5 md:px-5 lg:px-16 lg:gap-x-8 lg:items-center lg:justify-center">
             <section className="flex flex-col gap-y-8">
                 <div className="flex flex-col gap-y-8" id="contacto">
                     <h2 className="font-black text-4xl text-text-primary tracking-tight lg:text-5xl">Hablemos de tu Próximo<br />

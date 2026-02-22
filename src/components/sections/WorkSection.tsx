@@ -3,7 +3,7 @@
 
 const WorkSection = () => { 
     return (
-        <section className="py-15 bg-white" id="portafolio">
+        <section className="py-15 bg-white px-3.5 md:px-5 lg:px-16" id="portafolio">
             <section className="flex items-center flex-col gap-6 justify-between mb-16 md:flex-row">
                 <div id="portafolio">
                     <h2 className="font-black text-3xl text-text-primary tracking-tight lg:text-4xl">Proyectos y Prácticas Realizadas</h2>
