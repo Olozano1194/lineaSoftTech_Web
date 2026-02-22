@@ -5,7 +5,7 @@ const WorkSection = () => {
     return (
         <section className="py-15 bg-white" id="portafolio">
             <section className="flex items-center flex-col gap-6 justify-between mb-16 md:flex-row">
-                <div>
+                <div id="portafolio">
                     <h2 className="font-black text-3xl text-text-primary tracking-tight lg:text-4xl">Proyectos y Prácticas Realizadas</h2>
                     <p className="max-w-xl text-text-secondary">Algunos trabajos y desarrollos que hemos realizado como parte de nuestra experiencia profesional y académica.</p>                    
                 </div>

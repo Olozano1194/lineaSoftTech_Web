@@ -5,7 +5,7 @@ const ProcessSection = () => {
     return (
         <section className="overflow-hidden py-15">
             <section className="grid gap-20 items-center lg:grid-cols-2">
-                <div>
+                <div id="comoTrabajamos">
                     <h2 className="font-black mb-8 px-2 text-text-primary text-3xl tracking-tight lg:text-2xl">Cómo Trabajamos Contigo</h2>
                     <article className="space-y-12">
                         <article className="flex gap-6">

@@ -27,7 +27,7 @@ const FAQSection = () => {
     ];
 
     return (
-        <section className="py-15" id='fqa'>
+        <section className="py-15" id='faq'>
             <h2 className="font-black mb-10 text-3xl text-center text-text-primary tracking-tight lg:text-4xl">Preguntas Frecuentes</h2>
             { faqs.map((faq, index) => (
                 <Disclosure

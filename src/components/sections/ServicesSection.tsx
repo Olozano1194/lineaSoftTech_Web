@@ -6,7 +6,7 @@ import { IoMdCode } from "react-icons/io";
 const ServicesSection = () => {
     return (
         <section className="w-full bg-white pt-8 py-15">
-            <div className="mb-12 text-center">
+            <div className="mb-12 text-center" id="servicios">
                 <h2 className="font-black mb-4 text-text-primary text-3xl">Nuestros Servicios</h2>
                 <p className="max-auto text-text-secondary text-sm md:text-lg">
                     Ayudamos a emprendedores y pequeños negocios a digitalizar sus procesos con soluciones prácticas y funcionales.

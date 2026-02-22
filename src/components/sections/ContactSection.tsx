@@ -5,7 +5,7 @@ const ContactSection = () => {
     return (
         <section className="bg-white flex flex-col py-15 relative overflow-hidden md:flex-row lg:gap-x-8 lg:items-center lg:justify-center">
             <section className="flex flex-col gap-y-8">
-                <div className="flex flex-col gap-y-8">
+                <div className="flex flex-col gap-y-8" id="contacto">
                     <h2 className="font-black text-4xl text-text-primary tracking-tight lg:text-5xl">Hablemos de tu Próximo<br />
                     <span className="text-btn-primary">Gran Proyecto</span>                    
                     </h2>
