@@ -14,4 +14,5 @@
     /* text footer */
     --color-text-footer-primary: rgb(148 163 184 / var(--tw-text-opacity, 1));
     --color-text-footer-secondary: rgb(100 116 139 / var(--tw-text-opacity, 1));
+    --color-bg-footer: rgb(15 21 35 / var(--tw-text-opacity, 1))
 }
