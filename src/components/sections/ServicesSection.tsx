@@ -23,11 +23,11 @@ const ServicesSection = () => {
                 <ul className="space-y-2 text-sm font-medium text-text-footer-primary">
                     <li className="flex items-center gap-2">
                         <span className="text-[10px] bg-btn-primary p-0.5 text-white rounded-full"><FaCheck /></span>
-                        Diseño adaptable a celular y computadoras
+                        Diseño adaptable a celulares y computadoras
                     </li>
                     <li className="flex items-center gap-2">
                         <span className="text-[10px] bg-btn-primary p-0.5 text-white rounded-full"><FaCheck /></span>
-                        Formularios de contecto y WhatsApp
+                        Formularios de contacto y WhatsApp
                     </li>
                     <li className="flex items-center gap-2">
                         <span className="text-[10px] bg-btn-primary p-0.5 text-white rounded-full"><FaCheck /></span>
