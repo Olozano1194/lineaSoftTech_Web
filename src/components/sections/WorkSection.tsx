@@ -3,9 +3,9 @@
 
 const WorkSection = () => { 
     return (
-        <section className="py-15 bg-white px-3.5 md:px-5 lg:px-16" id="portafolio">
+        <section id="portafolio" className="py-15 px-3.5 md:px-5 lg:px-16">
             <section className="flex items-center flex-col gap-6 justify-between mb-16 md:flex-row">
-                <div id="portafolio">
+                <div>
                     <h2 className="font-black text-3xl text-text-primary tracking-tight lg:text-4xl">Proyectos y Prácticas Realizadas</h2>
                     <p className="max-w-xl text-text-secondary">Algunos trabajos y desarrollos que hemos realizado como parte de nuestra experiencia profesional y académica.</p>                    
                 </div>

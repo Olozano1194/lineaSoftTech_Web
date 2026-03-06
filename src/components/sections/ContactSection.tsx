@@ -3,9 +3,9 @@ import { MdOutlineEmail, MdOutlinePhone, MdOutlineCircle } from "react-icons/md"
 
 const ContactSection = () => {
     return (
-        <section className="bg-white flex flex-col py-15 relative overflow-hidden md:flex-row px-3.5 md:px-5 lg:px-16 lg:gap-x-8 lg:items-center lg:justify-center">
+        <section id="contacto" className="flex flex-col py-15 relative overflow-hidden md:flex-row px-3.5 md:px-5 lg:px-16 lg:gap-x-8 lg:items-center lg:justify-center">
             <section className="flex flex-col gap-y-8">
-                <div className="flex flex-col gap-y-8" id="contacto">
+                <div className="flex flex-col gap-y-8">
                     <h2 className="font-black text-4xl text-text-primary tracking-tight lg:text-5xl">Hablemos de tu Próximo<br />
                     <span className="text-btn-primary">Gran Proyecto</span>                    
                     </h2>
@@ -26,11 +26,11 @@ const ContactSection = () => {
                 <div className="mt-8">
                     <button className="w-full bg-green-500 cursor-pointer font-bold gap-3 flex items-center px-8 py-4 text-lg text-white shadow-green-500/20 transition-all rounded-xl hover:bg-green-600 hover:scale-105 md:w-sm">
                         <MdOutlineCircle className="bg-white text-sm rounded-full" />
-                        Escríbenos pr WhatsApp
+                        Escríbenos por WhatsApp
                     </button>
                 </div>                                
             </section>
-            <form className="w-80 bg-slate-100/80 flex flex-col items-center justify-center m-auto mt-10 py-5 px-6 gap-6 space-y-6 rounded-xl md:w-2xl md:max-w-2xl md:px-10 md:py-15">
+            <form className="w-80 bg-white/80 flex flex-col items-center justify-center m-auto mt-10 py-5 px-6 gap-6 space-y-6 rounded-xl md:w-2xl md:max-w-2xl md:px-10 md:py-15">
                 <div className="w-full grid grid-cols-1 mb-0 gap-4 md:grid-cols-2">
                     {/* name */}
                     <label className="w-full flex flex-col font-black gap-1">

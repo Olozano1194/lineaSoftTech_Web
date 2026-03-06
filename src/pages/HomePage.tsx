@@ -4,6 +4,7 @@ import ProcessSection from "../components/sections/ProcessSection";
 import WorkSection from "../components/sections/WorkSection";
 import FAQSection from "../components/sections/FAQSection";
 import ContactSection from "../components/sections/ContactSection";
+import PlanSolutionSection from "../components/sections/PlanSolutionSection";
 
 const HomePage = () => {
     return (
@@ -11,9 +12,10 @@ const HomePage = () => {
             <Hero />
             <ServicesSection />
             <ProcessSection />
+            <PlanSolutionSection />
             <WorkSection />
             <FAQSection />
-            <ContactSection />
+            <ContactSection />            
         </>        
     );
 };

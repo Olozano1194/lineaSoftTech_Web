@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 // ui
@@ -13,6 +14,7 @@ const Header = () => {
     const navigation = [
         { name: 'Servicios', href: '#servicios', current: true },
         { name: 'Cómo trabajamos', href: '#comoTrabajamos', current: false },
+        { name: 'Planes', href: '#planes', current: false },
         { name: 'Portafolio', href: '#portafolio', current: false },
         { name: 'FAQ', href: '#faq', current: false }
     ];
@@ -35,7 +37,7 @@ const Header = () => {
                             src={logo}
                             alt='logo'
                         />
-                        <span className='font-bold text-xl tracking-tight text-text-primary'>LineaSoftTech</span>
+                        <Link to='/' className='font-bold text-xl tracking-tight text-text-primary'>LineaSoftTech</Link>
                     </div>
                     <div className="sm:hidden">
                         {/* Mobile menu button*/}

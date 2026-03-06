@@ -1,10 +1,12 @@
 import { FaLinkedin, FaGithub, FaInstagram  } from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
 import logo from '../../assets/logoOscar1.jpeg'
 
 const Footer = () => {
     return (
         <footer className="w-full bg-bg-footer text-white pt-15 pb-10 px-3.5 md:px-5 lg:px-16">
-            <section className="gap-12 grid grid-cols-1 mb-16 md:grid-cols-2 lg:grid-cols-3 lg:w-5xl lg:m-auto lg:pb-10">
+            <section className="gap-12 grid grid-cols-1 mb-16 md:grid-cols-2 lg:grid-cols-4 lg:w-5xl lg:m-auto lg:pb-10">
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-2">
                         <img src={logo} className="font-bold text-3xl text-btn-primary rounded-lg"></img>
@@ -44,6 +46,18 @@ const Footer = () => {
                         <li>Sobre nosotros</li>
                         <li>Cómo trabajamos</li>
                         <li>Portafolio</li>                        
+                    </ul>
+                </div>
+                {/* Company */}
+                <div>
+                    <h5 className="font-bold mb-6">Contacto</h5>
+                    <ul className="space-y-4 text-text-footer-primary text-sm">
+                        <li className='flex gap-1 items-center'>
+                            <MdEmail />contacto@lineasofttech.com
+                        </li>
+                        <li className='flex gap-1 items-center'>
+                            <CiLocationOn />Purificación, Colombia
+                        </li>                                                
                     </ul>
                 </div>
             </section>
