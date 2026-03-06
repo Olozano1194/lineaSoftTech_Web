@@ -6,9 +6,7 @@ import LayoutAdmin from "./layouts/LayoutAdmin";
 // Error
 import Error404 from "./pages/Error404";
 
-function App() {
-  
-
+function App() { 
   return (
     <Routes>
       <Route path="/" element={<Navigate to='/layoutAdmin' />} />

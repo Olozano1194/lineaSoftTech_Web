@@ -9,7 +9,7 @@ const classNames = (...classes: string[]) => {
 };
 
 
-const Navbar = () => {
+const Header = () => {
     const navigation = [
         { name: 'Servicios', href: '#servicios', current: true },
         { name: 'Cómo trabajamos', href: '#comoTrabajamos', current: false },
@@ -103,4 +103,4 @@ const Navbar = () => {
         </Disclosure>
     );
 };
-export default Navbar;
+export default Header;
