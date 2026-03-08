@@ -1,4 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
+// utils
+import { scrollToSection } from "../../utils/scrollToSection";
 
 
 const Hero = () => {
@@ -22,8 +24,18 @@ const Hero = () => {
                     </p>
                     {/* btn */}
                     <div className="w-full mt-4 md:flex md:gap-5">
-                        <button className="flex bg-btn-primary cursor-pointer font-bold gap-x-1.5 items-center px-8 py-4 text-white text-lg transition-all rounded-lg shadow-lg shadow-btn-primary/20 hover:bg-btn-primary/90 hover:scale-105 md:text-lg">Ver Servicios <ArrowRightIcon className="w-5 h-5"/></button>
-                        <button className="bg-white cursor-pointer font-bold items-center mt-5 px-8 py-4 text-text-primary text-lg transition-all rounded-lg hover:border-btn-primary hover:scale-105 md:mt-0 md:text-lg">Contactar</button>                    
+                        <button
+                            onClick={() => scrollToSection('servicios')} 
+                            className="flex bg-btn-primary cursor-pointer font-bold gap-x-1.5 items-center px-8 py-4 text-white text-lg transition-all rounded-lg shadow-lg shadow-btn-primary/20 hover:bg-btn-primary/90 hover:scale-105 md:text-lg"
+                        >
+                            Ver Servicios <ArrowRightIcon className="w-5 h-5"/>
+                        </button>
+                        <button
+                            onClick={() => scrollToSection('contacto')} 
+                            className="bg-white cursor-pointer font-bold items-center mt-5 px-8 py-4 text-text-primary text-lg transition-all rounded-lg hover:border-btn-primary hover:scale-105 md:mt-0 md:text-lg"
+                        >
+                            Contactar
+                        </button>                    
                     </div>                
                 </article>
                 <figure className="relative max-w-2xl">

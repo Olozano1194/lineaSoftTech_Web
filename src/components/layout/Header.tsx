@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+// utils
+import { scrollToSection } from '../../utils/scrollToSection'
 // ui
 import BtnContact from '../ui/BtnContact';
 import logo from '../../assets/logoOscar1.jpeg';
@@ -17,14 +19,7 @@ const Header = () => {
         { name: 'Planes', href: '#planes', current: false },
         { name: 'Portafolio', href: '#portafolio', current: false },
         { name: 'FAQ', href: '#faq', current: false }
-    ];
-
-    const goToContact = () => {
-        const section = document.getElementById("contacto");
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
-        }
-    };
+    ];   
 
     return (
         <Disclosure as="nav" className="backdrop-blur-md bg-white/30 border-b border-slate-200/60 fixed w-full text-text-primary top-0 z-50">
@@ -67,7 +62,7 @@ const Header = () => {
                         {/* Button Contact - Desktop */}
                         <div className="shrink-0">
                             <BtnContact
-                                onClick={goToContact}
+                                onClick={() => scrollToSection('contacto')}
                             >
                                 Contactar
                             </BtnContact>
@@ -95,7 +90,7 @@ const Header = () => {
                     {/* Language Switcher - Mobile */}
                     <div className="flex gap-2 px-3 py-2 justify-end">
                         <BtnContact
-                            onClick={goToContact}
+                            onClick={() => scrollToSection('contacto')}
                         >
                             Contactar
                         </BtnContact>
