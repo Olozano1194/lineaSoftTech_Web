@@ -50,6 +50,8 @@ const ContactSection = () => {
                         <option value="">Escoge una opción</option>
                         <option value="">Landing Page</option>
                         <option value="">Desarrollo de Aplicaciones Web</option>
+                        <option value="">Optimización Web</option>
+                        <option value="">Automatización</option>
                         <option value="">Mantenimiento de Computadores</option>
                     </select>
                 </label>
