@@ -1,4 +1,6 @@
-import { FaLinkedin, FaGithub, FaInstagram  } from 'react-icons/fa';
+// utils
+import { scrollToSection } from '../../utils/scrollToSection';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import logo from '../../assets/logoOscar1.jpeg'
@@ -9,34 +11,35 @@ const Footer = () => {
             <section className="gap-12 grid grid-cols-1 mb-16 md:grid-cols-2 lg:grid-cols-4 lg:w-5xl lg:m-auto lg:pb-10">
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-2">
-                        <img src={logo} className="font-bold text-3xl text-btn-primary rounded-lg"></img>
+                        <img src={logo} className="font-bold text-3xl text-btn-primary rounded-lg" alt='LineaSoftTech logo'></img>
                         <span className="font-bold text-xl tracking-tight">LineaSoftTech</span>
 
                     </div>                    
                     <p className="leading-relaxed text-text-footer-primary text-sm">
                         Desarrollamos soluciones tecnológicas prácticas para emprendedores, pequeños negocios y proyectos en crecimiento.
                     </p>
+                    {/* redes */}
                     <div className="flex gap-4">
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        <a href="www.linkedin.com/in/olozanobocanegra" target='_blanck' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                            <FaLinkedin />
                         </a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        <a href="https://github.com/Olozano1194" target='_blanck' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                            <FaGithub />
                         </a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        {/* <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                             <FaInstagram />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 {/* Services */}
                 <div>
                     <h5 className="font-bold mb-6">Servicios</h5>
-                    <ul className="space-y-4 text-text-footer-primary text-sm">
-                        <li>Software a Medida</li>
-                        <li>Landing Pages</li>
-                        <li>Automatización de Procesos</li>
-                        <li>Soporte Técnico TI</li>
-                        <li>Mantenimiento de Equipos</li>
+                    <ul className="flex flex-col items-start space-y-4 text-text-footer-primary text-sm">
+                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Software a Medida</button>
+                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Landing Pages</button>
+                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Automatización de Procesos</button>
+                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Optimización Web</button>
+                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Mantenimiento de Equipos</button>
                     </ul>
                 </div> 
                 {/* Company */}
@@ -48,7 +51,7 @@ const Footer = () => {
                         <li>Portafolio</li>                        
                     </ul>
                 </div>
-                {/* Company */}
+                {/* Contact */}
                 <div>
                     <h5 className="font-bold mb-6">Contacto</h5>
                     <ul className="space-y-4 text-text-footer-primary text-sm">
