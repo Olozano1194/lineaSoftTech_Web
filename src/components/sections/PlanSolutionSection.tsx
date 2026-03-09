@@ -20,6 +20,11 @@ const PlanSolutionSection = () => {
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Presencia Web</h3>
                             <p className="text-text-secondary text-sm">Ideal para profesionales que buscan visibilidad inmediata.</p>
                         </section>
+                        <div className="border-y border-slate-100 py-2">
+                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
+                                Desde 120 - 300 USD
+                            </p>
+                        </div>
                         <ul className="flex flex-col gap-4 grow">
                             <li className="text-slate-700 text-sm">
                                 <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Landing page profesional</span>
@@ -54,6 +59,11 @@ const PlanSolutionSection = () => {
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Negocio Digital</h3>
                             <p className="text-text-secondary text-sm">Transforma tus procesos y gestiona tu contenido.</p>
                         </section>
+                        <div className="border-y border-slate-100 py-2">
+                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
+                                Desde 400 - 800 USD
+                            </p>
+                        </div>
                         <ul className="flex flex-col gap-4 grow">
                             <li className="text-slate-700 text-sm">
                                 <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Sitio Web Multipágina completo</span>
@@ -85,6 +95,11 @@ const PlanSolutionSection = () => {
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Optimización Web</h3>
                             <p className="text-text-secondary text-sm">Mejora el rendimiento de tu sitio actual.</p>
                         </section>
+                        <div className="border-y border-slate-100 py-2">
+                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
+                                Desde 80 - 200 USD
+                            </p>
+                        </div>
                         <ul className="flex flex-col gap-4 grow">
                             <li className="text-slate-700 text-sm">
                                 <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Mejora de velocidad de carga</span>
@@ -97,7 +112,7 @@ const PlanSolutionSection = () => {
                             </li>
                             <li className="text-slate-700 text-sm">
                                 <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Auditoría SEO técnica</span>
-                            </li>                            
+                            </li>
                         </ul>
                         <button className="bg-btn-primary cursor-pointer font-bold flex ga-2 h-12 items-center justify-center mt-4 px-4 rounded-lg text-white text-sm transition-all w-full hover:bg-btn-primary/90">
                             <span className="text-lg"><MdOutlineChat /></span>
