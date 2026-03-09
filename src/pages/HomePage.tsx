@@ -11,9 +11,9 @@ const HomePage = () => {
         <>
             <Hero />
             <ServicesSection />
-            <ProcessSection />
-            <PlanSolutionSection />
             <WorkSection />
+            <ProcessSection />
+            <PlanSolutionSection />            
             <FAQSection />
             <ContactSection />            
         </>        
