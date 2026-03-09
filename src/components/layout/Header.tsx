@@ -15,9 +15,9 @@ const classNames = (...classes: string[]) => {
 const Header = () => {
     const navigation = [
         { name: 'Servicios', href: '#servicios', current: true },
-        { name: 'Cómo trabajamos', href: '#comoTrabajamos', current: false },
-        { name: 'Planes', href: '#planes', current: false },
         { name: 'Portafolio', href: '#portafolio', current: false },
+        { name: 'Cómo trabajamos', href: '#comoTrabajamos', current: false },
+        { name: 'Planes', href: '#planes', current: false },        
         { name: 'FAQ', href: '#faq', current: false }
     ];   
 
