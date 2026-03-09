@@ -20,7 +20,7 @@ const Footer = () => {
                     </p>
                     {/* redes */}
                     <div className="flex gap-4">
-                        <a href="www.linkedin.com/in/olozanobocanegra" target='_blanck' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blanck' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                            <FaLinkedin />
                         </a>
                         <a href="https://github.com/Olozano1194" target='_blanck' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
