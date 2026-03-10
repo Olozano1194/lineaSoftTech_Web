@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: Props) => {
           {project.title}
         </h4>
 
-        <p className="text-slate-300 text-sm">
+        <p className="text-slate-100 text-sm">
           {project.description}
         </p>
       </div>
