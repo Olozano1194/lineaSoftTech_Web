@@ -1,10 +1,9 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-// import { useState } from 'react';
 import { MdArrowForwardIos } from "react-icons/md";
 
 
 const FAQSection = () => {
-    // const [ activateIndex, setActivateIndex ] = useState<number | null>(null);
+    
 
     const faqs = [
         {
@@ -44,14 +43,12 @@ const FAQSection = () => {
                 <Disclosure
                     key={index}
                     as="div"
-                    // defaultOpen={activateIndex === index} 
                     className="space-y-4 mb-7"
                 >
                     {({ open }) => (
                         <div className='rounded-xl border border-slate-200 max-w-3xl overflow-hidden md:mx-auto'>
                             <DisclosureButton
                                 className="w-full flex items-center justify-between p-6 cursor-pointer list-none transition-colors hover:bg-slate-50"
-                            // onClick={() => setActivateIndex(open ? null : index)}
                             >
                                 <span className="font-bold text-text-primary">
                                     {faq.question}

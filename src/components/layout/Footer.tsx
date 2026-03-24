@@ -20,10 +20,10 @@ const Footer = () => {
                     </p>
                     {/* redes */}
                     <div className="flex gap-4">
-                        <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blanck' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blank' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                            <FaLinkedin />
                         </a>
-                        <a href="https://github.com/Olozano1194" target='_blanck' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        <a href="https://github.com/Olozano1194" target='_blank' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                            <FaGithub />
                         </a>
                         {/* <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </section>
             <section className="pt-6 border-t border-white/10 flex flex-col justify-between items-center gap-6 text-xs text-text-footer-secondary font-medium md:flex-row lg:text-sm">
-            <p>@ {new Date().getFullYear()} LineaSoftTech. Todos los derechos reservados.</p>
+            <p>@{new Date().getFullYear()} LineaSoftTech. Todos los derechos reservados.</p>
             <div className="flex gap-8">
                 <a href="#" className="hover:text-slate-300">Términos y Condiciones</a>
                 <a href="#" className="hover:text-slate-300">Política de Privacidad</a>

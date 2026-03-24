@@ -1,73 +1,113 @@
-# React + TypeScript + Vite
+# LineaSoftTech Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web corporativo para LineaSoftTech, empresa de desarrollo de software y servicios tecnológicos. Presenta los servicios, proyectos realizados, información de contacto y formulario de consulta.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core
+- **React 19** - Librería UI
+- **TypeScript 5.9** - Tipado estático
+- **Vite 8** - Build tool y servidor de desarrollo
 
-## React Compiler
+### Estilos
+- **Tailwind CSS 4** - Framework de estilos utility-first
+- **@tailwindcss/vite** - Plugin Vite para Tailwind
+- **Heroicons** - Iconos SVG
+- **React Icons (react-icons)** - Colección de iconos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Routing
+- **React Router DOM 7** - Navegación SPA
 
-## Expanding the ESLint configuration
+### Formularios
+- **React Hook Form 7** - Manejo de formularios
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### UI Components
+- **Headless UI 2** - Componentes accesibles (Disclosure)
+- **React Hot Toast** - Notificaciones toast
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Linting
+- **ESLint 9** - Linting y calidad de código
+- **TypeScript ESLint** - Soporte TypeScript para ESLint
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Estructura del Proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── assets/              # Imágenes y recursos estáticos
+├── components/
+│   ├── layout/          # Header, Footer (componentes de estructura)
+│   ├── sections/        # Secciones de la landing page
+│   ├── projects/        # Componentes relacionados con proyectos
+│   └── ui/             # Componentes reutilizables (BtnContact, ServiceCard)
+├── layouts/            # Layouts principales de página
+├── pages/              # Páginas de la aplicación
+├── utils/
+│   ├── models/         # Definiciones de tipos TypeScript
+│   ├── projectsData.ts # Catálogo de proyectos
+│   ├── servicesData.tsx # Catálogo de servicios
+│   └── scrollToSection.ts # Utilidad para scroll suave
+├── App.tsx             # Router principal
+├── main.tsx            # Punto de entrada
+└── index.css           # Estilos globales y theme Tailwind
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Arquitectura y Patrones
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Routing
+- SPA con React Router DOM 7
+- Estructura: `/layoutAdmin` → `<HomePage />` (layout anidado)
+- Página 404 para rutas no definidas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Composición de Páginas
+- `HomePage` ensambla secciones independientes
+- Cada sección es un componente funcional separado
+
+### Gestión de Datos
+- Datos estáticos en archivos `*Data.ts`
+- Tipos TypeScript en `utils/models/`
+- Separación entre tipos (`types.ts`) y datos
+
+### Formularios
+- `react-hook-form` para validación
+- Integración con FormSubmit para envío
+- Técnicas anti-spam: honeypot fields
+
+### Navegación
+- Scroll suave entre secciones (ID-based)
+- Header fijo con navegación
+- Menú responsive con Disclosure (Headless UI)
+
+### Estilos
+- Tailwind CSS v4 con `@theme` para variables
+- Sistema de diseño con colores custom en CSS
+- Clases utility para layout y espaciado
+
+## Scripts Disponibles
+
+```bash
+npm run dev      # Inicia servidor de desarrollo
+npm run build    # Build de producción
+npm run preview  # Vista previa del build
+npm run lint     # Ejecuta ESLint
 ```
+
+## Variables de Tema
+
+Definidas en `index.css`:
+
+| Variable | Uso |
+|----------|-----|
+| `--color-bg-light` | Fondo claro |
+| `--color-btn-primary` | Color principal (azul) |
+| `--color-text-primary` | Títulos y texto principal |
+| `--color-text-secondary` | Texto secundario |
+| `--color-text-footer-*` | Colores del footer |
+
+## Dependencias de Desarrollo
+
+| Paquete | Propósito |
+|---------|-----------|
+| `@vitejs/plugin-react` | Plugin Vite para React |
+| `typescript` | Compilador TypeScript |
+| `eslint` | Linting |
+| `@types/*` | Tipos TypeScript |
