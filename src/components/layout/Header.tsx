@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 // utils
@@ -11,15 +10,26 @@ const classNames = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')
 };
 
+const getSectionId = (href: string): string => {
+    return href.replace('#', '');
+};
+
+const scrollToTop = (): void => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 const Header = () => {
     const navigation = [
         { name: 'Servicios', href: '#servicios', current: true },
         { name: 'Portafolio', href: '#portafolio', current: false },
         { name: 'Cómo trabajamos', href: '#comoTrabajamos', current: false },
-        { name: 'Planes', href: '#planes', current: false },        
+        { name: 'Planes', href: '#planes', current: false },
         { name: 'FAQ', href: '#faq', current: false }
-    ];   
+    ];
+
+    const handleNavClick = (href: string) => {
+        scrollToSection(getSectionId(href));
+    };
 
     return (
         <Disclosure as="nav" className="backdrop-blur-md bg-white/30 border-b border-slate-200/60 fixed w-full text-text-primary top-0 z-50">
@@ -28,67 +38,44 @@ const Header = () => {
                     {/* Logo y nombre */}
                     <div className="flex gap-1 w-auto items-center">
                         <img
-                            className='rounded-lg size-9 h-8 w-auto'
+                            className="rounded-lg size-9 h-8 w-auto cursor-pointer"
                             src={logo}
-                            alt='logo'
+                            alt="logo"
+                            onClick={scrollToTop}
                         />
-                        <Link to='/' className='font-bold text-xl tracking-tight text-text-primary'>LineaSoftTech</Link>
+                        <button
+                            onClick={scrollToTop}
+                            className="font-bold text-xl tracking-tight text-text-primary cursor-pointer"
+                        >
+                            LineaSoftTech
+                        </button>
                     </div>
+                    {/* Botón menú móvil */}
                     <div className="sm:hidden">
-                        {/* Mobile menu button*/}
                         <DisclosureButton className="p-2 rounded-b-md hover:bg-btn-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-btn-primary">
-                            <span className="absolute -inset-0.5" />
                             <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
                             <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
                         </DisclosureButton>
-                    </div>
-                    {/* Desktop Navigation */}
-                    <div className="hidden items-center justify-end gap-8 sm:flex lg:gap-12">
-                        <div className="flex gap-4 lg:gap-8">
-                            {navigation.map((item) => (
-                                <a
-                                    key={item.name}
-                                    href={item.href}
-                                    aria-current={item.current ? 'page' : undefined}
-                                    className={classNames(
-                                        item.current ? 'hover:text-btn-primary text-text-secondary transition-colors' : 'text-text-secondary hover:text-btn-primary transition-colors',
-                                        'rounded-md py-2 text-sm lg:text-base font-medium whitespace-nowrap',
-                                    )}
-                                >
-                                    {item.name}
-                                </a>
-                            ))}
-                        </div>
-                        {/* Button Contact - Desktop */}
-                        <div className="shrink-0">
-                            <BtnContact
-                                onClick={() => scrollToSection('contacto')}
+                    </div>                
+                {/* Desktop Navigation */}
+                <div className="hidden items-center justify-end gap-8 sm:flex lg:gap-12">
+                    <div className="flex gap-4 lg:gap-8">
+                        {navigation.map((item) => (
+                            <a
+                                key={item.name}
+                                href={item.href}
+                                aria-current={item.current ? 'page' : undefined}
+                                className={classNames(
+                                    item.current ? 'hover:text-btn-primary text-text-secondary transition-colors' : 'text-text-secondary hover:text-btn-primary transition-colors',
+                                    'rounded-md py-2 text-sm lg:text-base font-medium whitespace-nowrap',
+                                )}
                             >
-                                Contactar
-                            </BtnContact>
-                        </div>
+                                {item.name}
+                            </a>
+                        ))}
                     </div>
-                </div>
-            </div>
-            {/* Mobile menu panel */}
-            <DisclosurePanel className="absolute bg-white/90 backdrop-blur-sm right-0 rounded-bl-lg rounded-tl-lg top-16 shadow-lg p-4 sm:hidden">
-                <div className="space-y-1 px-2 pb-3 pt-2">
-                    {navigation.map((item) => (
-                        <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            aria-current={item.current ? 'page' : undefined}
-                            className={classNames(
-                                item.current ? 'flex justify-end text-text-secondary' : 'flex justify-end text-text-secondary hover:text-btn-primary',
-                                'block rounded-md px-3 py-2 font-medium transition-colors',
-                            )}
-                        >
-                            {item.name}
-                        </DisclosureButton>
-                    ))}
-                    {/* Language Switcher - Mobile */}
-                    <div className="flex gap-2 px-3 py-2 justify-end">
+                    {/* Button Contact - Desktop */}
+                    <div className="shrink-0">
                         <BtnContact
                             onClick={() => scrollToSection('contacto')}
                         >
@@ -96,8 +83,43 @@ const Header = () => {
                         </BtnContact>
                     </div>
                 </div>
-            </DisclosurePanel>
-        </Disclosure>
+            </div>
+        </div>
+            {/* Mobile menu panel */ }
+    <DisclosurePanel className="absolute bg-white/90 backdrop-blur-sm right-0 rounded-bl-lg rounded-tl-lg top-16 shadow-lg p-4 sm:hidden">
+        {({ close }) => (
+            <div className="space-y-1 px-2 pb-3 pt-2">
+                {navigation.map((item) => (
+                    <DisclosureButton
+                        key={item.name}
+                        as="button"
+                        onClick={() => {
+                            close(); // cierra el menú móvil
+                            handleNavClick(item.href); // luego hace scroll
+                        }}
+                        className={classNames(
+                            item.current ? 'flex justify-end text-text-secondary w-full' : 'flex justify-end text-text-secondary hover:text-btn-primary w-full',
+                            'block rounded-md px-3 py-2 font-medium transition-colors',
+                        )}
+                    >
+                        {item.name}
+                    </DisclosureButton>
+                ))}
+                {/* Botón Contacto - Mobile */}
+                <div className="flex gap-2 px-3 py-2 justify-end">
+                    <BtnContact
+                        onClick={() => {
+                            close();
+                            scrollToSection('contacto');
+                        }}
+                    >
+                        Contactar
+                    </BtnContact>
+                </div>
+            </div>
+        )}
+    </DisclosurePanel>
+        </Disclosure >
     );
 };
 export default Header;

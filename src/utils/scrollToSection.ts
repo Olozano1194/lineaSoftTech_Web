@@ -1,6 +1,13 @@
-export const scrollToSection = (id: string): void => {
-    const section = document.getElementById(id);
-    if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-    };
+export const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+        const headerOffset = 64; // altura de tu header fijo (ajusta si cambias h-16)
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
 };
