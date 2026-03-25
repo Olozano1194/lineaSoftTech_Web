@@ -1,5 +1,5 @@
 import type { Service } from "../../utils/models/service.types";
-import { CheckIcon } from "../../utils/models/icons";
+import { FaCheck } from "react-icons/fa6";
 
 interface ServiceCardProps {
     service: Service;
@@ -21,7 +21,7 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
                 {service.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-2">
                         <span className="text-[10px] bg-btn-primary p-0.5 text-white rounded-full">
-                            <CheckIcon />
+                            <FaCheck />
                         </span>
                         {feature.text}
                     </li>
