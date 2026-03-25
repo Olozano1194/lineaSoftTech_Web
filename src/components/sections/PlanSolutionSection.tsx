@@ -1,4 +1,4 @@
-import BtnPrice from "../ui/btnPrice";
+import BtnPrice from "../ui/BtnPrice";
 import { MdLanguage } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 
