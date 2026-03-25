@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 //Mensajes
 import { toast } from 'react-hot-toast';
@@ -13,12 +14,16 @@ type FormData = {
 
 
 const ContactSection = () => {
+    const [isLoading, setIsLoading] = useState(false);
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
     const onSubmit = handleSubmit(async (data) => {
+        if (isLoading) return;
         if (data.website) return; // honeypot
+        setIsLoading(true);
         try {
-            const response = await fetch("https://formsubmit.co/ajax/contacto@lineasofttech.com", {
+            const contactUrl = import.meta.env.VITE_CONTACTFORM_URL;
+            const response = await fetch(contactUrl, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -36,6 +41,8 @@ const ContactSection = () => {
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : "Error al enviar el mensaje";
             toast.error(errorMessage);
+        } finally {
+            setIsLoading(false);
         }
     });
 
@@ -182,9 +189,12 @@ const ContactSection = () => {
                 <div className="flex md:mt-8 md:items-center md:justify-center">
                     <button
                         type="submit"
+                        disabled={isLoading}
                         className="w-full cursor-pointer bg-btn-primary font-bold flex items-center justify-center px-7 py-4 text-white rounded-xl hover:bg-btn-primary/90 hover:scale-105 shadow-lg shadow-btn-primary/20 transition-all md:w-60"
                     >
-                        Enviar mensaje
+                        {
+                            isLoading ? 'Enviando...' : 'Enviar mensaje'
+                        }                        
                     </button>
                 </div>
             </form>
