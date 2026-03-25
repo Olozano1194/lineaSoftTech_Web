@@ -1,4 +1,5 @@
-import { MdLanguage, MdOutlineChat } from "react-icons/md";
+import BtnPrice from "../ui/btnPrice";
+import { MdLanguage } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 
 
@@ -14,7 +15,7 @@ const PlanSolutionSection = () => {
                     {/* Plan 1 */}
                     <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md">
                         <section className="flex flex-col gap-2">
-                            <div className="bg-btn-primary/10 p-3 reunded-lg w-fit">
+                            <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
                                 <span className="text-btn-primary"><MdLanguage /></span>
                             </div>
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Presencia Web</h3>
@@ -42,10 +43,7 @@ const PlanSolutionSection = () => {
                                 <span className="flex font-semibold gap-3 items-center "><FaCheckCircle className="text-green-500 text-lg" />Configuración inicial SEO</span>
                             </li>
                         </ul>
-                        <button className="bg-btn-primary cursor-pointer font-bold flex ga-2 h-12 items-center justify-center mt-4 px-4 rounded-lg text-white text-sm transition-all w-full hover:bg-btn-primary/90">
-                            <span className="text-lg"><MdOutlineChat /></span>
-                            Cotización personalizada
-                        </button>
+                        <BtnPrice />
                     </article>
                     {/* Plan 2 */}
                     <article className="bg-white border-2 border-btn-primary flex flex-col gap-6 p-8 rounded-xl scale-105 shadow-sm transition-shadow z-10 hover:shadow-md">
@@ -53,7 +51,7 @@ const PlanSolutionSection = () => {
                             Más Popular
                         </section>
                         <section className="flex flex-col gap-2">
-                            <div className="bg-btn-primary/10 p-3 reunded-lg w-fit">
+                            <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
                                 <span className="text-btn-primary"><MdLanguage /></span>
                             </div>
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Negocio Digital</h3>
@@ -81,15 +79,12 @@ const PlanSolutionSection = () => {
                                 <span className="flex font-semibold gap-3 items-center "><FaCheckCircle className="text-green-500 text-lg" />Soporte técnico prioritario</span>
                             </li>
                         </ul>
-                        <button className="bg-btn-primary cursor-pointer font-bold flex ga-2 h-12 items-center justify-center mt-4 px-4 rounded-lg text-white text-sm transition-all w-full hover:bg-btn-primary/90">
-                            <span className="text-lg"><MdOutlineChat /></span>
-                            Cotización personalizada
-                        </button>
+                        <BtnPrice />
                     </article>
                     {/* Plan 3 */}
                     <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md">
                         <section className="flex flex-col gap-2">
-                            <div className="bg-btn-primary/10 p-3 reunded-lg w-fit">
+                            <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
                                 <span className="text-btn-primary"><MdLanguage /></span>
                             </div>
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Optimización Web</h3>
@@ -114,10 +109,7 @@ const PlanSolutionSection = () => {
                                 <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Auditoría SEO técnica</span>
                             </li>
                         </ul>
-                        <button className="bg-btn-primary cursor-pointer font-bold flex ga-2 h-12 items-center justify-center mt-4 px-4 rounded-lg text-white text-sm transition-all w-full hover:bg-btn-primary/90">
-                            <span className="text-lg"><MdOutlineChat /></span>
-                            Cotización personalizada
-                        </button>
+                        <BtnPrice />
                     </article>
 
                 </article>
