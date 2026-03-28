@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import { scrollToSection } from "../../utils/scrollToSection";
 
 
-const Hero = () => {
+const HeroSection = () => {
     return (
         <section className="flex flex-col py-15 px-3.5 md:px-5 lg:px-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-btn-primary/10 text-btn-primary text-sm font-bold uppercase tracking-wider w-fit">
@@ -56,4 +56,4 @@ const Hero = () => {
         </section>
     );
 };
-export default Hero;
+export default HeroSection;

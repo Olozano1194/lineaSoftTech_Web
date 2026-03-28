@@ -1,6 +1,7 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // Page
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 // Layouts
 import LayoutAdmin from "./layouts/LayoutAdmin";
 // Error
@@ -9,9 +10,10 @@ import Error404 from "./pages/Error404";
 function App() { 
   return (
     <Routes>
-      <Route path="/" element={<Navigate to='/layoutAdmin' />} />
-      <Route path="layoutAdmin" element={<LayoutAdmin />}>
+      {/* <Route path="/" element={<Navigate to='/layoutAdmin' />} /> */}
+      <Route path="/" element={<LayoutAdmin />}>
         <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
       </Route>
       <Route path="*" element={<Error404 />} />         
     </Routes>

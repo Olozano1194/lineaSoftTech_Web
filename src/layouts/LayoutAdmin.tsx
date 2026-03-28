@@ -10,7 +10,7 @@ function LayoutAdmin() {
                 <main className="flex-1 overflow-y-auto pt-16">
                     <Outlet />
                 </main>
-                <Footer></Footer>                 
+                <Footer />                 
             </div>
         </div>
     );

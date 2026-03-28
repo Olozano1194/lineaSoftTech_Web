@@ -1,5 +1,5 @@
 import { SEO } from "../components/ui/SEO";
-import Hero from "../components/sections/HeroSection";
+import HeroSection from "../components/sections/HeroSection";
 import ServicesSection from "../components/sections/ServicesSection";
 import ProcessSection from "../components/sections/ProcessSection";
 import WorkSection from "../components/sections/WorkSection";
@@ -17,7 +17,7 @@ const HomePage = () => {
                 image={logo}
                 favicon={favicon}                 
             />
-            <Hero />
+            <HeroSection />
             <ServicesSection />
             <WorkSection />
             <ProcessSection />
