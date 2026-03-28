@@ -1,11 +1,11 @@
 import BtnPrice from "../ui/BtnPrice";
-import { MdLanguage } from "react-icons/md";
+import { MdLanguage, MdStorefront, MdSpeed } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 
 
 const PlanSolutionSection = () => {
     return (
-        <section id="planes" className="bg-white py-16 px-6">
+        <section id="planes" className="py-16 px-6">
             <div className="max-w-300 mx-auto">
                 <div className="mb-16 text-center">
                     <h2 className="font-black leading-tight mb-4 text-3xl text-text-primary tracking-tight md:text-4xl">Planes y Soluciones</h2>
@@ -13,7 +13,7 @@ const PlanSolutionSection = () => {
                 </div>
                 <article className="gap-8 grid grid-cols-1 md:grid-cols-3">
                     {/* Plan 1 */}
-                    <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md">
+                    <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md md:p-6 lg:p-8">
                         <section className="flex flex-col gap-2">
                             <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
                                 <span className="text-btn-primary"><MdLanguage /></span>
@@ -46,13 +46,13 @@ const PlanSolutionSection = () => {
                         <BtnPrice />
                     </article>
                     {/* Plan 2 */}
-                    <article className="bg-white border-2 border-btn-primary flex flex-col gap-6 p-8 rounded-xl scale-105 shadow-sm transition-shadow z-10 hover:shadow-md">
+                    <article className="bg-white border-2 border-btn-primary flex flex-col gap-6 p-8 rounded-xl scale-105 shadow-sm transition-shadow z-10 hover:shadow-md md:p-6 lg:p-8">
                         <section className="absolute bg-btn-primary font-bold -left-1 px-4 py-2 text-xs text-white tracking-wider -top-3 translate-x-30 rounded-full uppercase md:text-sm md:translate-x-15 md:-top-5">
                             Más Popular
                         </section>
                         <section className="flex flex-col gap-2">
                             <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
-                                <span className="text-btn-primary"><MdLanguage /></span>
+                                <span className="text-btn-primary"><MdStorefront /></span>
                             </div>
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Negocio Digital</h3>
                             <p className="text-text-secondary text-sm">Transforma tus procesos y gestiona tu contenido.</p>
@@ -82,10 +82,10 @@ const PlanSolutionSection = () => {
                         <BtnPrice />
                     </article>
                     {/* Plan 3 */}
-                    <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md">
+                    <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md md:p-6 lg:p-8">
                         <section className="flex flex-col gap-2">
                             <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
-                                <span className="text-btn-primary"><MdLanguage /></span>
+                                <span className="text-btn-primary"><MdSpeed /></span>
                             </div>
                             <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Optimización Web</h3>
                             <p className="text-text-secondary text-sm">Mejora el rendimiento de tu sitio actual.</p>
@@ -111,7 +111,6 @@ const PlanSolutionSection = () => {
                         </ul>
                         <BtnPrice />
                     </article>
-
                 </article>
             </div>
         </section>
