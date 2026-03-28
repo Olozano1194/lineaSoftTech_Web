@@ -1,3 +1,4 @@
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 // utils
@@ -18,7 +19,20 @@ const scrollToTop = (): void => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
+// Logo handler: scroll to top if on home, navigate to home if elsewhere
+const handleLogoClick = (isHome: boolean, navigate: ReturnType<typeof useNavigate>): void => {
+    if (isHome) {
+        scrollToTop();
+    } else {
+        navigate('/');
+    }
+};
+
 const Header = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const isHome = location.pathname === '/';
+
     const navigation = [
         { name: 'Servicios', href: '#servicios', current: true },
         { name: 'Portafolio', href: '#portafolio', current: false },
@@ -41,10 +55,10 @@ const Header = () => {
                             className="rounded-lg size-9 h-8 w-auto cursor-pointer"
                             src={logo}
                             alt="logo"
-                            onClick={scrollToTop}
+                            onClick={() => handleLogoClick(isHome, navigate)}
                         />
                         <button
-                            onClick={scrollToTop}
+                            onClick={() => handleLogoClick(isHome, navigate)}
                             className="font-bold text-xl tracking-tight text-text-primary cursor-pointer"
                         >
                             LineaSoftTech
