@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
 // utils
 import { scrollToSection } from '../../utils/scrollToSection';
+// icons
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
+// logo
 import logo from '../../assets/logoOscar1.jpeg'
 
 const Footer = () => {
@@ -14,17 +17,17 @@ const Footer = () => {
                         <img src={logo} className="text-3xl text-btn-primary rounded-lg" alt='LineaSoftTech logo'></img>
                         <span className="font-bold text-xl tracking-tight">LineaSoftTech</span>
 
-                    </div>                    
+                    </div>
                     <p className="leading-relaxed text-text-footer-primary text-sm">
                         Desarrollamos soluciones tecnológicas prácticas para emprendedores, pequeños negocios y proyectos en crecimiento.
                     </p>
                     {/* redes */}
                     <div className="flex gap-4">
                         <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blank' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
-                           <FaLinkedin />
+                            <FaLinkedin />
                         </a>
                         <a href="https://github.com/Olozano1194" target='_blank' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
-                           <FaGithub />
+                            <FaGithub />
                         </a>
                         {/* <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                             <FaInstagram />
@@ -41,14 +44,21 @@ const Footer = () => {
                         <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Optimización Web</button>
                         <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Mantenimiento de Equipos</button>
                     </ul>
-                </div> 
+                </div>
                 {/* Company */}
                 <div>
                     <h5 className="font-bold mb-6">Compañía</h5>
                     <ul className="space-y-4 text-text-footer-primary text-sm">
-                        <li>Sobre nosotros</li>
-                        <li>Cómo trabajamos</li>
-                        <li>Portafolio</li>                        
+                        <li>
+                            <span>
+                                <Link to='/about'>Sobre nosotros</Link>
+                            </span>
+                        </li>
+                        <li><span>
+                            <button className='cursor-pointer' onClick={() => scrollToSection('comoTrabajamos')}>Como trabajamos</button>
+                        </span>
+                        </li>
+                        <li>Portafolio</li>
                     </ul>
                 </div>
                 {/* Contact */}
@@ -60,17 +70,17 @@ const Footer = () => {
                         </li>
                         <li className='flex gap-1 items-center'>
                             <CiLocationOn />Purificación, Colombia
-                        </li>                                                
+                        </li>
                     </ul>
                 </div>
             </section>
             <section className="pt-6 border-t border-white/10 flex flex-col justify-between items-center gap-6 text-xs text-text-footer-secondary font-medium md:flex-row lg:text-sm">
-            <p>@{new Date().getFullYear()} LineaSoftTech. Todos los derechos reservados.</p>
-            <div className="flex gap-8">
-                <a href="#" className="hover:text-slate-300">Términos y Condiciones</a>
-                <a href="#" className="hover:text-slate-300">Política de Privacidad</a>
-                <a href="#" className="hover:text-slate-300">Cookies</a>
-            </div>
+                <p>@{new Date().getFullYear()} LineaSoftTech. Todos los derechos reservados.</p>
+                <div className="flex gap-8">
+                    <a href="#" className="hover:text-slate-300">Términos y Condiciones</a>
+                    <a href="#" className="hover:text-slate-300">Política de Privacidad</a>
+                    <a href="#" className="hover:text-slate-300">Cookies</a>
+                </div>
             </section>
         </footer>
     );
