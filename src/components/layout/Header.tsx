@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { scrollToSection } from '../../utils/scrollToSection'
 // ui
 import BtnContact from '../ui/BtnContact';
-import logo from '../../assets/logoOscar1.jpeg';
+import logo from '../../../public/Logo.png';
 
 const classNames = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')
@@ -97,7 +97,7 @@ const Header = () => {
                         </BtnContact>
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
             {/* Mobile menu panel */ }
     <DisclosurePanel className="absolute bg-white/90 backdrop-blur-sm right-0 rounded-bl-lg rounded-tl-lg top-16 shadow-lg p-4 sm:hidden">

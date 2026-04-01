@@ -8,7 +8,7 @@ import ContactSection from "../components/sections/ContactSection";
 import PlanSolutionSection from "../components/sections/PlanSolutionSection";
 // img
 import logo from "../../src/assets/logoOscar1.jpeg";
-import favicon from "../../public/favicon-16x16.png"
+import favicon from "../../public/favicon.png"
 
 const HomePage = () => {
     return (

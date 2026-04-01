@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import ScrollToTop from "../components/layout/ScrollToTop";
+import ScrollToTop from "../components/ui/ScrollToTop";
 
 function LayoutAdmin() {
     return (
