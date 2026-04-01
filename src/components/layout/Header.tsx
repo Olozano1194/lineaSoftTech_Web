@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { scrollToSection } from '../../utils/scrollToSection'
 // ui
 import BtnContact from '../ui/BtnContact';
-import logo from '../../../public/Logo.png';
+import logo from '../../assets/logo.png';
 
 const classNames = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')

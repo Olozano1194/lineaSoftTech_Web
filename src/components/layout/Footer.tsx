@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 // logo
-import logo from '../../assets/logoOscar1.jpeg'
+import logo from '../../assets/logo.png'
 
 const Footer = () => {
     return (
@@ -14,7 +14,7 @@ const Footer = () => {
             <section className="gap-12 grid grid-cols-1 mb-16 md:grid-cols-2 lg:grid-cols-4 lg:w-5xl lg:m-auto lg:pb-10">
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-2">
-                        <img src={logo} className="text-3xl text-btn-primary rounded-lg" alt='LineaSoftTech logo'></img>
+                        <img src={logo} className="text-3xl text-btn-primary rounded-lg size-9 h-8 w-auto" alt='LineaSoftTech logo'></img>
                         <span className="font-bold text-xl tracking-tight">LineaSoftTech</span>
 
                     </div>

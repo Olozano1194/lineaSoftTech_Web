@@ -1,4 +1,4 @@
-import fotoPerfilOscar from '../../../../public/fotoPerfil.png'
+import fotoPerfilOscar from '../../../assets/fotoPerfil.png'
 
 const TeamSection = () => {
     return (
