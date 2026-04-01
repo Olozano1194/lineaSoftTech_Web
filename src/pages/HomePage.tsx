@@ -7,7 +7,7 @@ import FAQSection from "../components/sections/FAQSection";
 import ContactSection from "../components/sections/ContactSection";
 import PlanSolutionSection from "../components/sections/PlanSolutionSection";
 // img
-import logo from "../../src/assets/logoOscar1.jpeg";
+import logo from "../../src/assets/logo.png";
 import favicon from "../../public/favicon.png"
 
 const HomePage = () => {
