@@ -1,5 +1,4 @@
-import { MdRocketLaunch } from "react-icons/md";
-import { FaShieldAlt } from "react-icons/fa";
+import { FaLightbulb, FaHandshake } from "react-icons/fa";
 
 
 const HistorySection = () => {
@@ -28,7 +27,7 @@ const HistorySection = () => {
                             Nuestra Historia
                         </h2>
                         <p className="leading-relaxed text-lg text-text-secondary">
-                            LineaSoftTech surge de una idea clara: apoyar a los negocios locales y emprendedores que quieren evolucionar hacia lo digital pero no saben por dónde empezar.                           
+                            LineaSoftTech surge de una idea clara: apoyar a los negocios locales y emprendedores que quieren evolucionar hacia lo digital pero no saben por dónde empezar.
                         </p>
                         <p className="leading-relaxed text-lg text-text-secondary">
                             Estamos iniciando nuestro camino como desarrolladores independientes, lo que nos permite volcar toda nuestra energía y aprendizaje constante en cada proyecto real que asumimos. Entendemos que no necesitas sistemas complejos y costosos, sino herramientas simples, funcionales y económicas que funcionen desde el primer día.
@@ -36,17 +35,21 @@ const HistorySection = () => {
                         <div className="gap-4 grid grid-cols-2 pt-4">
                             <div className="border border-text-footer-primary/10 bg-text-footer-primary/5 p-4 rounded-xl">
                                 <span className="mg-2 text-btn-primary">
-                                    <MdRocketLaunch className="text-2xl mb-2" />
+                                    <FaLightbulb className="text-2xl mb-2" />
                                 </span>
-                                <h4 className="font-bold text-text-primary">Aprendizaje constante</h4>
-                                <p className="text-xs text-text-secondary">Aplicamos las últimas tendencias y herramientas para que tu proyecto no se quede atrás.</p>
+                                <h4 className="font-bold text-text-primary mb-2">Aprendizaje constante</h4>
+                                <p className="text-xs text-text-secondary">
+                                    Nos mantenemos aprendiendo y actualizándonos constantemente para aplicar herramientas y enfoques actuales en cada proyecto.
+                                </p>
                             </div>
                             <div className="border border-text-footer-primary/10 bg-text-footer-primary/5 p-4 rounded-xl">
                                 <span className="mg-2 text-btn-primary">
-                                    <FaShieldAlt className="text-2xl mb-2" />
+                                    <FaHandshake className="text-2xl mb-2" />
                                 </span>
-                                <h4 className="font-bold text-text-primary">Cercanía</h4>
-                                <p className="text-xs text-text-secondary">Sin tecnicismos complicados. Trabajamos de forma directa y clara contigo para que entiendas cada paso.</p>
+                                <h4 className="font-bold text-text-primary mb-2">Cercanía</h4>
+                                <p className="text-xs text-text-secondary">
+                                    Nos gusta trabajar de forma clara y directa, explicando cada paso sin complicaciones para que siempre tengas control y confianza en el proceso.
+                                </p>
                             </div>
                         </div>
                     </article>
