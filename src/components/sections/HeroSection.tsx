@@ -17,7 +17,7 @@ const HeroSection = () => {
                 {/* article */}
                 <article className="mt-10 lg:mt-0">
                     <h1 className="font-black leading-[1.1] text-4xl text-text-primary tracking-tight lg:text-7xl">
-                        Tecnológia Práctica para hacer <span className="text-btn-primary underline decoration-btn-primary/20 ">Crecer tu Negocio</span>
+                        Tecnología Práctica para hacer <span className="text-btn-primary underline decoration-btn-primary/20 ">Crecer tu Negocio</span>
                     </h1>
                     <p className="mt-5 text-text-secondary text-lg max-w-xl leading-relaxed lg:text-xl">
                         Creamos páginas web, sistemas básicos y ofrecemos soporte técnico para digitalizar tu negocio de forma clara y sin complicaciones.
