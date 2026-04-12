@@ -2,6 +2,27 @@
 
 Sitio web corporativo para LineaSoftTech, empresa de desarrollo de software y servicios tecnológicos. Presenta los servicios, proyectos realizados, información de contacto y formulario de consulta.
 
+## 🚀 Características
+
+- Landing page completa con secciones: Hero, Servicios, Portafolio, Proceso, Planes, FAQ, Contacto
+- Página "Sobre Nosotros" con historia, misión/visión y equipo
+- Formulario de contacto funcional con validación
+- Navegación con scroll suave entre secciones
+- Diseño responsive (móvil, tablet, desktop)
+- Páginas legales: Términos, Privacidad, Cookies
+- SEO optimizado: meta tags, Open Graph, sitemap, robots.txt, JSON-LD
+- Imágenes locales (sin dependencias externas)
+
+## 🌐 Rutas
+
+| Ruta | Página |
+|------|--------|
+| `/` | Home - Landing page principal |
+| `/about` | Sobre Nosotros |
+| `/terminos` | Términos y Condiciones |
+| `/privacidad` | Política de Privacidad |
+| `/cookies` | Política de Cookies |
+
 ## Tecnologías
 
 ### Core
