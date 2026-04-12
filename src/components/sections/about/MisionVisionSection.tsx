@@ -3,7 +3,7 @@ import { MdAdsClick, MdFavorite, MdVisibility } from "react-icons/md";
 const MisionVisionSection = () => {
     return (
         <section className="px-6 py-24">
-            <section className="max-w-7xl mx-auto">
+            <section className="max-w-7xl mx-auto" id="misionVisionValores">
                 <div className="mb-16 text-center">
                     <h2 className="font-bold font-roboto mb-4 text-3xl">Lo Que Nos Define</h2>
                     <div className="bg-btn-primary h-1.5 mx-auto rounded-full w-20"></div>

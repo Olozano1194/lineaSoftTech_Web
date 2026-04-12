@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+import { scrollToSection } from "../../../utils/scrollToSection";
+
 const HeroSection = () => {
+    const navigate = useNavigate();
+
+    const handleVerSoluciones = () => {
+        navigate('/#portafolio');
+    };
     return (
         <section className="overflow-hidden px-6 py-24 relative md:py-32">
             <section className="max-w-7xl mx-auto text-center">
@@ -9,8 +17,13 @@ const HeroSection = () => {
                     Somos un equipo de ingenieros de sistemas apasionados por la tecnología. Ayudamos a emprendedores y pequeños negocios a dar sus primeros pasos digitales con soluciones prácticas y a su medida.                    
                 </p>                
                 <div className="flex flex-col gap-4 justify-center sm:flex-row">
-                    <button className="bg-btn-primary cursor-pointer font-bold px-8 py-4 rounded-xl text-white transition-all hover:shadow-lg hover:shadow-btn-primary/20">Ver soluciones</button>
-                    <button className="bg-text-secondary/10 cursor-pointer font-bold px-8 py-4 rounded-xl text-text-primary transition-all hover:bg-text-secondary/20">Nuestros valores</button>
+                    <button onClick={handleVerSoluciones} className="bg-btn-primary cursor-pointer font-bold px-8 py-4 rounded-xl text-white transition-all hover:shadow-lg hover:shadow-btn-primary/20">Ver soluciones</button>
+                    <button 
+                        className="bg-text-secondary/10 cursor-pointer font-bold px-8 py-4 rounded-xl text-text-primary transition-all hover:bg-text-secondary/20"
+                        onClick={() => scrollToSection('misionVisionValores')}
+                    >
+                        Nuestros valores
+                    </button>
                 </div>
             </section>            
         </section>
