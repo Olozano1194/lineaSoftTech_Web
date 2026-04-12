@@ -10,7 +10,7 @@ const HistorySection = () => {
                         <picture className="aspect-square overflow-hidden shadow-2xl">
                             <img
                                 className="h-full object-cover rounded-3xl w-full"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgECokCoXaXgtKRrUC5CLr219B59nZbCZ5-74Ntwh0s7zJoX35EgsSxNcbDvBAcScjUv1CVe5qHmybqLg6NOV8BPuMZ1uYEL5vMnYOJZhZS495nv5oczG8XVFAgHro3BMmxq49OjbcmeN7cgdKMPFGaOZJ2lAbowaFuOArPV2ZfCre83DlZ1oPOTYGdocl8ummWvaFVRecr_ZueH224pc-tbKUgDLs5RPNKZNdfbobBcj2VVxI7D7XVQComafH_5TWqtqK2C8HONI"
+                                src="/assets/images/history-office.jpg"
                                 alt="Modern collaborative office space with team members working on glass boards and laptops in a bright airy environment" />
                         </picture>
                         <div className="absolute -bottom-6 bg-white hidden p-6 rounded-2xl -right-6 shadow-xl md:flex md:flex-col">

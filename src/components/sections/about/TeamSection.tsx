@@ -1,5 +1,3 @@
-import fotoPerfilOscar from '../../../assets/fotoPerfil.png'
-
 const TeamSection = () => {
     return (
         <section className="bg-white px-6 py-24">
@@ -12,7 +10,6 @@ const TeamSection = () => {
                             Trabajamos con emprendedores y pequeñas empresas para desarrollar páginas web, aplicaciones sencillas y mejoras que realmente aporten valor a sus negocios.
                         </p>
                     </div>
-                    {/* <button className="font-bold flex items-center gap-2 group text-btn-primary">Ver todo el equipo</button> */}
                 </div>
                 <section className="gap-8 grid grid-cols-1 md:grid-cols-2">
                     {/* Team Member 1 */}
@@ -20,8 +17,8 @@ const TeamSection = () => {
                         <picture className="aspect-4/5 mb-6 overflow-hidden relative">
                             <img
                                 className="duration-500 grayscale h-full object-cover rounded-3xl transition-all w-full group-hover:grayscale-0"
-                                src={fotoPerfilOscar}
-                                alt="Professional portrait of a male CEO in a modern office, wearing a smart casual blazer, confident expression"
+                                src="/assets/fotoPerfil.png"
+                                alt="Professional portrait of Oscar Lozano, Co-Fundador and Desarrollador Web"
                             />
                         </picture>
                         <h3 className="font-bold mb-1 text-xl text-text-primary">Oscar Lozano</h3>
@@ -39,8 +36,8 @@ const TeamSection = () => {
                         <picture className="aspect-4/5 mb-6 overflow-hidden relative">
                             <img
                                 className="duration-500 grayscale h-full object-cover rounded-3xl transition-all w-full group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJAbDO2gIPDmPDkksr0ce9mO_XYACGWHFyEBTQwPyKwhKUz0AMvSY9QIUaXDdY8wTuZorCPzrImp78DFRsTMkOhqOFtMrcITnCgy47qx33X2g9b5t1wW1uWffhVpq9H1SoLl68sB9ZojUQEf_5cbfJhYwRrN61WjQGbq6z0s52B9FdNl_QqeWPfUWDKpuAy8rg7ln3gxPaLePBuk_XkVGBwVFaQukRXt5XtcoyeEnyFBJMMdurXVVCDLG8P-NFBozx12jCZebsIjI"
-                                alt="Professional portrait of a male CEO in a modern office, wearing a smart casual blazer, confident expression"
+                                src="/assets/images/team-yeison.jpg"
+                                alt="Professional portrait of Yeison Bocanegra, Co-Fundador and Especialista en Automatización"
                             />
                         </picture>
                         <h3 className="font-bold mb-1 text-xl text-text-primary">Yeison Bocanegra</h3>
@@ -52,23 +49,6 @@ const TeamSection = () => {
                             Complemento esto con conocimientos de programación, lo que me permite aportar un enfoque práctico y moderno en cada proyecto.
                         </p>
                     </article>
-                    {/* Team Member 3 */}
-                    {/* <article className="group flex flex-col">
-                        <picture className="aspect-4/5 mb-6 overflow-hidden relative">
-                            <img
-                                className="duration-500 grayscale h-full object-cover rounded-3xl transition-all w-full group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiALP6bb1aY-Ha85fNcTMKw-a_I-0ot4yu2UmEVQ291ahVXvf2_uza4QtIjbtoaXwb5bLd8A6LN5aFr7gSrgsAFr2HOBZ7kZIP_7nQMUPIEj5UDU5z4iX2xgTwTL8kN49f04yi6RbozGS2ZU_uTjqkRb6ZE6axcIWFEyyBUGTVHczXks5TksXkGstOk3W1XXl3k9sZjmkVcNA1f7eVnfO3TXc1bNe1WxgpbKKhcftxSYWKIsoWNWKLOQS2Mwzl6pWnNs2XeD3ebqQ"
-                                alt="Professional portrait of a male CEO in a modern office, wearing a smart casual blazer, confident expression"
-                            />
-                        </picture>
-                        <h3 className="font-bold mb-1 text-xl text-text-primary">Sofia Ortiz</h3>
-                        <p className="font-semibold mb-3 text-btn-primary">
-                            Director Creativo
-                        </p>
-                        <p className="mt-auto text-text-secondary text-sm">
-                            Líder de diseño UI/UX enfocado en crear experiencias intuitivas que deleitan a los usuarios finales.
-                        </p>
-                    </article> */}
                 </section>
             </section>
         </section>

@@ -45,7 +45,7 @@ const ProcessSection = () => {
                 </div>
                 <figure className="relative lg:max-w-xl">
                     <img 
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsFhq0CCf66_J76sao6inlQkJDb8mEIOVseLQW4aEQSCgEXCHwJiPp6p8m6LfzswdV834l2Dc1MMtw43Pfs5laxhN61hS7Km97pJjAURz3YemP__YJ93ITt-AoieleUV7ipTn1WLPevJus_vCWOuRhuqUF_qT0hYBlx_ZWgk4DPqo1Z7ZwAYF8BaKCa_pyQPF7H7jCatM5sHRga9YmeCdtGXbrCusLaiEL_HVkqKEoevccqDbyTU7nXDOJ7Xp-D6lrgaMInylitWA"
+                        src="/assets/images/process-team.jpg"
                         alt="Team Work"
                         className="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-square"
                         data-alt="Team colla borating in a modern tech office environment" 

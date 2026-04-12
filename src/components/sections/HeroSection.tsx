@@ -44,7 +44,7 @@ const HeroSection = () => {
                     <div className="bg-white p-4 rounded-2xl shadow-2xl border border-slate-100 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500 max-w-2xl">
                         <div className="w-full bg-slate-50 aspect-4/3 rounded-lg overflow-hidden relative">
                             <img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9vdjziNPntoQSNco7upKTB7xrajUxWS9miz7N8wqPtv6hPu6WbR6NBsLwaxDfG25cozKpYUp9eC-khP5qH5TLrf1087zigGJ0JXQHmZxCWk_4k91GSm8YHDDtFU_rXYYcX-0fdBPUYEDgCTej6AmzABbWOa2_6kGevRHsXiIVL2wivLFg128ObV_dbF3-d_igOKIEn1gYisop1JQmvss6oBi7XMsCXS2P8V8CHfAJigf2nXfHgHtbIL-VrjrVs9nI_h3vvYPfyeY"
+                                src="/assets/images/hero-showcase.jpg"
                                 className="w-full h-full object-cover mix-blend-multiply opacity-80" alt="Interface Showcase"
                                 data-alt="Dashboard analytics and modern software interface"
                             />
