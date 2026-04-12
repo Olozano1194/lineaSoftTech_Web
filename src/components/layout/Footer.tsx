@@ -66,7 +66,7 @@ const Footer = () => {
                     <h5 className="font-bold mb-6">Contacto</h5>
                     <ul className="space-y-4 text-text-footer-primary text-sm">
                         <li className='flex gap-1 items-center'>
-                            <MdEmail />contacto@lineasofttech.com
+                            <MdEmail />lineasofttech@gmail.com
                         </li>
                         <li className='flex gap-1 items-center'>
                             <CiLocationOn />Purificación, Colombia

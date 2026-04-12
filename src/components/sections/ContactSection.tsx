@@ -60,7 +60,7 @@ const ContactSection = () => {
                 <div className="space-y-6">
                     <p className="flex items-center gap-4 text-slate-700">
                         <MdOutlineEmail className="w-12 h-12 rounded-full bg-btn-primary/10 p-2 text-btn-primary flex items-center justify-center" />
-                        <span className="font-bold">contacto@lineasofttech.com</span>
+                        <span className="font-bold">lineasofttech@gmail.com</span>
                     </p>
                     <p className="flex items-center gap-4 text-slate-700">
                         <MdOutlinePhone className="w-12 h-12 rounded-full bg-green-500/10 p-2 text-green-600 flex items-center justify-center" />
