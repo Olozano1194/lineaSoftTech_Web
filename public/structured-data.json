@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "LineaSoftTech",
+  "description": "Desarrollo web, aplicaciones y soporte técnico para emprendedores y pequeños negocios",
+  "url": "https://linea-soft-tech-web.vercel.app",
+  "logo": "https://linea-soft-tech-web.vercel.app/logo.png",
+  "image": "https://linea-soft-tech-web.vercel.app/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Purificación",
+    "addressRegion": "Tolima",
+    "addressCountry": "CO"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+57-300-302-4589",
+    "contactType": "customer service",
+    "email": "lineasofttech@gmail.com",
+    "availableLanguage": ["Spanish"]
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Colombia"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/olozanobocanegra",
+    "https://github.com/Olozano1194"
+  ]
+}
