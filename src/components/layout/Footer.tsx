@@ -77,9 +77,9 @@ const Footer = () => {
             <section className="pt-6 border-t border-white/10 flex flex-col justify-between items-center gap-6 text-xs text-text-footer-secondary font-medium md:flex-row lg:text-sm">
                 <p>@{new Date().getFullYear()} LineaSoftTech. Todos los derechos reservados.</p>
                 <div className="flex gap-8">
-                    <a href="#" className="hover:text-slate-300">Términos y Condiciones</a>
-                    <a href="#" className="hover:text-slate-300">Política de Privacidad</a>
-                    <a href="#" className="hover:text-slate-300">Cookies</a>
+                    <Link to="/terminos" className="hover:text-slate-300">Términos y Condiciones</Link>
+                    <Link to="/privacidad" className="hover:text-slate-300">Política de Privacidad</Link>
+                    <Link to="/cookies" className="hover:text-slate-300">Cookies</Link>
                 </div>
             </section>
         </footer>
