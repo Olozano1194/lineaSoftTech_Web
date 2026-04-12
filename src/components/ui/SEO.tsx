@@ -9,11 +9,11 @@ interface SEOProps {
 }
 
 const DEFAULTS = {
-  title: 'LineaSoftTech - Soluciones de Software',
-  description: 'Desarrollamos software a medida, apps y sitios web para impulsar tu negocio.',
-  image: 'https://tusitio.com/logoOscar1.jpeg',
-  url: 'https://tusitio.com/',
-  favicon: '/vite.svg', // default del favicon
+  title: 'LineaSoftTech - Desarrollo Web, Sistemas y Soporte Técnico',
+  description: 'Creamos páginas web, aplicaciones y sistemas para emprendedores y pequeños negocios. Desarrollo web, automatización y soporte técnico.',
+  image: '/logo.png',
+  url: 'https://lineasofttech.com/',
+  favicon: '/favicon.png',
 };
 
 export const SEO = ({
