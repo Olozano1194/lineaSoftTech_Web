@@ -1,11 +1,6 @@
-import Header from '../../components/layout/Header';
-import Footer from '../../components/layout/Footer';
-
 const PrivacyPage = () => {
     return (
-        <>
-            <Header />
-            <main className="pt-24 pb-16 px-6 min-h-screen bg-white">
+        <main className="pt-24 pb-16 px-6 min-h-screen bg-white">
                 <article className="max-w-3xl mx-auto">
                     <h1 className="font-black text-3xl md:text-4xl text-text-primary mb-8">
                         Política de Privacidad
@@ -74,9 +69,7 @@ const PrivacyPage = () => {
                         </section>
                     </div>
                 </article>
-            </main>
-            <Footer />
-        </>
+        </main>
     );
 };
 export default PrivacyPage;

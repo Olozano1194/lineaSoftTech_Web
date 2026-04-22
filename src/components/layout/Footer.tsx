@@ -40,9 +40,7 @@ const Footer = () => {
                     <ul className="flex flex-col items-start space-y-4 text-text-footer-primary text-sm">
                         <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Software a Medida</button>
                         <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Landing Pages</button>
-                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Automatización de Procesos</button>
-                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Optimización Web</button>
-                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Mantenimiento de Equipos</button>
+                        <button className='cursor-pointer' onClick={() => scrollToSection('servicios')}>Automatización de Procesos</button>                        
                     </ul>
                 </div>
                 {/* Company */}
@@ -54,11 +52,11 @@ const Footer = () => {
                                 <Link to='/about'>Sobre nosotros</Link>
                             </span>
                         </li>
-                        <li><span>
-                            <button className='cursor-pointer' onClick={() => scrollToSection('comoTrabajamos')}>Como trabajamos</button>
-                        </span>
-                        </li>
-                        <li>Portafolio</li>
+                        <li>
+                            <span>
+                                <button className='cursor-pointer' onClick={() => scrollToSection('comoTrabajamos')}>Como trabajamos</button>
+                            </span>
+                        </li>                        
                     </ul>
                 </div>
                 {/* Contact */}
