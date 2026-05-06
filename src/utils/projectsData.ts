@@ -19,10 +19,10 @@ export const projects: Project[] = [
     },
     {
         id: 3,
-        title: "LogiTrack System",
+        title: "Tinta Urbana",
         category: "landing",
-        tag: "Software / Logística",
-        description: "Software a medida para rastreo de flotas en tiempo real.",
-        image: "/assets/images/project-logitrack.jpg"
+        tag: "Landing / Logística",
+        description: "Landing page para servicios de estampados para gorras, buzos y camisetas.",
+        image: "/assets/projects/demo-Estampados.png"
     }
 ];

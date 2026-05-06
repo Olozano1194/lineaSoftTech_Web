@@ -23,7 +23,7 @@ const PlanSolutionSection = () => {
                         </section>
                         <div className="border-y border-slate-100 py-2">
                             <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
-                                Desde 120 - 300 USD
+                                Desde 100 USD
                             </p>
                         </div>
                         <ul className="flex flex-col gap-4 grow">
@@ -47,7 +47,7 @@ const PlanSolutionSection = () => {
                     </article>
                     {/* Plan 2 */}
                     <article className="bg-white border-2 border-btn-primary flex flex-col gap-6 p-8 rounded-xl scale-105 shadow-sm transition-shadow z-10 hover:shadow-md md:p-6 lg:p-8">
-                        <section className="absolute bg-btn-primary font-bold -left-1 px-4 py-2 text-xs text-white tracking-wider -top-3 translate-x-30 rounded-full uppercase md:text-sm md:translate-x-15 md:-top-5">
+                        <section className="absolute bg-btn-primary font-bold -left-1 px-4 py-2 text-xs text-white tracking-wider -top-3 translate-x-30 rounded-full uppercase md:text-sm md:translate-x-15 md:-top-5 lg:translate-x-28">
                             Más Popular
                         </section>
                         <section className="flex flex-col gap-2">
@@ -59,7 +59,7 @@ const PlanSolutionSection = () => {
                         </section>
                         <div className="border-y border-slate-100 py-2">
                             <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
-                                Desde 400 - 800 USD
+                                Desde 300 USD
                             </p>
                         </div>
                         <ul className="flex flex-col gap-4 grow">
@@ -92,7 +92,7 @@ const PlanSolutionSection = () => {
                         </section>
                         <div className="border-y border-slate-100 py-2">
                             <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
-                                Desde 80 - 200 USD
+                                Desde 80 USD
                             </p>
                         </div>
                         <ul className="flex flex-col gap-4 grow">
