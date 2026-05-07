@@ -64,15 +64,15 @@ const ContactSection = () => {
                     </p>
                     <p className="flex items-center gap-4 text-slate-700">
                         <MdOutlinePhone className="w-12 h-12 rounded-full bg-green-500/10 p-2 text-green-600 flex items-center justify-center" />
-                        <span className="font-bold">+57 300 302 4589</span>
+                        <span className="font-bold">+57 302 112 0794</span>
                     </p>
                 </div>
                 {/* btn whatsapp */}
                 <div className="mt-8">
                     <a
-                        href="https://wa.me/573003024589"
+                        href="https://wa.me/573021120794"
                         target="_blank"
-                        rel="noopener noreFerrer" 
+                        rel="noopener noreferrer" 
                         className="w-full bg-green-500 cursor-pointer font-bold gap-3 flex items-center px-8 py-4 text-lg text-white shadow-green-500/20 transition-all rounded-xl hover:bg-green-600 hover:scale-105 md:w-sm"
                     >
                         <MdOutlineCircle className="bg-white text-sm rounded-full" />
