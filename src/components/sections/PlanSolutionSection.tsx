@@ -22,8 +22,8 @@ const PlanSolutionSection = () => {
                             <p className="text-text-secondary text-sm">Ideal para profesionales que buscan visibilidad inmediata.</p>
                         </section>
                         <div className="border-y border-slate-100 py-2">
-                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
-                                Desde 100 USD
+                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-3xl lg:text-4xl">
+                                <span className="font-semibold pr-2 text-sm text-text-secondary">Desde</span> 280k <span className="font-semibold pl-2 text-sm text-text-footer-secondary">COP</span>
                             </p>
                         </div>
                         <ul className="flex flex-col gap-4 grow">
@@ -43,7 +43,7 @@ const PlanSolutionSection = () => {
                                 <span className="flex font-semibold gap-3 items-center "><FaCheckCircle className="text-green-500 text-lg" />Configuración inicial SEO</span>
                             </li>
                         </ul>
-                        <BtnPrice />
+                        <BtnPrice planName="Plan Presencia Web" />
                     </article>
                     {/* Plan 2 */}
                     <article className="bg-white border-2 border-btn-primary flex flex-col gap-6 p-8 rounded-xl scale-105 shadow-sm transition-shadow z-10 hover:shadow-md md:p-6 lg:p-8">
@@ -58,8 +58,8 @@ const PlanSolutionSection = () => {
                             <p className="text-text-secondary text-sm">Transforma tus procesos y gestiona tu contenido.</p>
                         </section>
                         <div className="border-y border-slate-100 py-2">
-                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
-                                Desde 300 USD
+                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-3xl lg:text-4xl">
+                                <span className="font-semibold pr-2 text-sm text-text-secondary">Desde</span> 900k <span className="font-semibold pl-2 text-sm text-text-footer-secondary">COP</span>
                             </p>
                         </div>
                         <ul className="flex flex-col gap-4 grow">
@@ -79,7 +79,7 @@ const PlanSolutionSection = () => {
                                 <span className="flex font-semibold gap-3 items-center "><FaCheckCircle className="text-green-500 text-lg" />Soporte técnico prioritario</span>
                             </li>
                         </ul>
-                        <BtnPrice />
+                        <BtnPrice planName="Plan Negocio Digital" />
                     </article>
                     {/* Plan 3 */}
                     <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md md:p-6 lg:p-8">
@@ -91,8 +91,8 @@ const PlanSolutionSection = () => {
                             <p className="text-text-secondary text-sm">Mejora el rendimiento de tu sitio actual.</p>
                         </section>
                         <div className="border-y border-slate-100 py-2">
-                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-xl lg:text-3xl">
-                                Desde 80 USD
+                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-3xl lg:text-4xl">
+                                <span className="font-semibold pr-2 text-sm text-text-secondary">Desde</span> 200k <span className="font-semibold pl-2 text-sm text-text-footer-secondary">COP</span>
                             </p>
                         </div>
                         <ul className="flex flex-col gap-4 grow">
@@ -109,7 +109,7 @@ const PlanSolutionSection = () => {
                                 <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Auditoría SEO técnica</span>
                             </li>
                         </ul>
-                        <BtnPrice />
+                        <BtnPrice planName="Plan Optimización Web" />
                     </article>
                 </article>
             </div>
