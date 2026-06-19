@@ -1,0 +1,24 @@
+project: lineaSoftTech_Web
+stack:
+  framework: React 19.2.4
+  language: TypeScript 5.9.3
+  styling: Tailwind CSS 4.2.2
+  bundler: Vite 8.0.1
+  routing: React Router 7.13.1
+  forms: react-hook-form 7.72.0
+  ui: Headless UI 2.2.9, react-icons 5.6.0
+  notifications: react-hot-toast 2.6.0
+testing:
+  runner: none
+  strict_tdd: false
+persistence:
+  mode: openspec
+  path: openspec/
+conventions:
+  commits: conventional
+  imports: verbatimModuleSyntax (type imports required)
+  jsx: react-jsx
+  strict: true
+  noUnusedLocals: true
+  noUnusedParameters: true
+artifact_store: openspec
