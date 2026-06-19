@@ -100,3 +100,15 @@
 
 - "alteration" → "alteración"
 - "Su datos" → "Sus datos"
+
+---
+
+### `c688545` — feat(perf-and-polish): validar env vars, scroll flicker, .env.example
+
+**Archivos:** `.env.example`, `BtnPrice.tsx`, `ScrollToTop.tsx`, `HomePage.tsx`, `ContactSection.tsx`
+
+- T1: BtnPrice valida `VITE_WA_PHONE` — si falta, no renderiza el botón
+- T2: `.env.example` con placeholder en inglés
+- T3: ScrollToTop omitido si hay hash, `HEADER_OFFSET` compartido, `requestAnimationFrame` doble en vez de `setTimeout(100)`
+- T4: ContactSection valida `VITE_CONTACTFORM_URL` antes del fetch
+- Artifacts SDD completos en `openspec/changes/perf-and-polish/`
