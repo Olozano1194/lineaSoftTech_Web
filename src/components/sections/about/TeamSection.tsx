@@ -19,6 +19,7 @@ const TeamSection = () => {
                                 className="duration-500 grayscale h-full object-cover rounded-3xl transition-all w-full group-hover:grayscale-0"
                                 src="/assets/fotoPerfil.webp"
                                 alt="Professional portrait of Oscar Lozano, Co-Fundador and Desarrollador Web"
+                                loading="lazy"
                             />
                         </picture>
                         <h3 className="font-bold mb-1 text-xl text-text-primary">Oscar Lozano</h3>
@@ -38,6 +39,7 @@ const TeamSection = () => {
                                 className="duration-500 grayscale h-full object-cover rounded-3xl transition-all w-full group-hover:grayscale-0"
                                 src="/assets/images/team-yeison.webp"
                                 alt="Professional portrait of Yeison Bocanegra, Co-Fundador and Especialista en Automatización"
+                                loading="lazy"
                             />
                         </picture>
                         <h3 className="font-bold mb-1 text-xl text-text-primary">Yeison Bocanegra</h3>

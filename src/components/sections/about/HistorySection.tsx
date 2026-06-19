@@ -11,7 +11,8 @@ const HistorySection = () => {
                             <img
                                 className="h-full object-cover rounded-3xl w-full"
                                 src="/assets/images/history-office.webp"
-                                alt="Modern collaborative office space with team members working on glass boards and laptops in a bright airy environment" />
+                                alt="Modern collaborative office space with team members working on glass boards and laptops in a bright airy environment"
+                                loading="lazy" />
                         </picture>
                         <div className="absolute -bottom-6 bg-white hidden p-6 rounded-2xl -right-6 shadow-xl md:flex md:flex-col">
                             <span className="font-black text-btn-primary text-4xl">

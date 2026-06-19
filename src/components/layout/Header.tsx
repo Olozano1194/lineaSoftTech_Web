@@ -60,6 +60,7 @@ const Header = () => {
                             className="rounded-lg size-9 h-8 w-auto cursor-pointer"
                             src={logo}
                             alt="logo"
+                            loading="eager"
                             onClick={() => handleLogoClick(isHome, navigate)}
                         />
                         <button

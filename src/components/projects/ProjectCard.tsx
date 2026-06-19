@@ -10,8 +10,9 @@ const ProjectCard = ({ project }: Props) => {
     <picture className="group relative overflow-hidden rounded-2xl bg-text-primary">
       <img
         src={project.image}
-        className="w-full h-80 object-cover opacity-90 group-hover:opacity-40 group-hover:scale-110 transition-all duration-500"
+        className="w-full aspect-[4/3] object-cover opacity-90 group-hover:opacity-40 group-hover:scale-110 transition-all duration-500"
         alt={project.title}
+        loading="lazy"
       />
 
       <div className="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">

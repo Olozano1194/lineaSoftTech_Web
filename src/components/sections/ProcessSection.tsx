@@ -48,7 +48,7 @@ const ProcessSection = () => {
                         src="/assets/images/process-team.webp"
                         alt="Team Work"
                         className="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-square"
-                        data-alt="Team colla borating in a modern tech office environment" 
+                        loading="lazy"
                     />
                     <div className="absolute -top-10 -right-10 w-3xl h-full border-2 border-btn-primary/20 rounded-3xl z-0 lg:max-w-xl"></div>
                 </figure>                                

@@ -46,6 +46,7 @@ const HeroSection = () => {
                             <img
                                 src="/assets/images/hero-showcase.webp"
                                 className="w-full h-full object-cover mix-blend-multiply opacity-80" alt="Interface Showcase"
+                                loading="eager"
                                 data-alt="Dashboard analytics and modern software interface"
                             />
                         </div>
