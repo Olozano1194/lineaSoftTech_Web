@@ -5,7 +5,7 @@ export const projects: Project[] = [
         id: 1,
         title: "FiadoApp",
         category: "webapp",
-        tag: "Negocios / Fiados",
+        tag: "Negocios / Tiendas",
         description: "Plataforma de administración comercial para tiendas de barrio con dashboard de ventas, inventario inteligente y control de clientes.",
         image: "/assets/projects/demo-FiadoApp.webp"
     },
