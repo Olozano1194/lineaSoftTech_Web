@@ -44,7 +44,7 @@ const HeroSection = () => {
                     <div className="bg-white p-4 rounded-2xl shadow-2xl border border-slate-100 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500 max-w-2xl">
                         <div className="w-full bg-slate-50 aspect-4/3 rounded-lg overflow-hidden relative">
                             <img
-                                src="/assets/images/hero-showcase.jpg"
+                                src="/assets/images/hero-showcase.webp"
                                 className="w-full h-full object-cover mix-blend-multiply opacity-80" alt="Interface Showcase"
                                 data-alt="Dashboard analytics and modern software interface"
                             />

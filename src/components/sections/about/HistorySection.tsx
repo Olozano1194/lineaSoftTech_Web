@@ -10,7 +10,7 @@ const HistorySection = () => {
                         <picture className="aspect-square overflow-hidden shadow-2xl">
                             <img
                                 className="h-full object-cover rounded-3xl w-full"
-                                src="/assets/images/history-office.jpg"
+                                src="/assets/images/history-office.webp"
                                 alt="Modern collaborative office space with team members working on glass boards and laptops in a bright airy environment" />
                         </picture>
                         <div className="absolute -bottom-6 bg-white hidden p-6 rounded-2xl -right-6 shadow-xl md:flex md:flex-col">

@@ -45,7 +45,7 @@ const ProcessSection = () => {
                 </div>
                 <figure className="relative lg:max-w-xl">
                     <img 
-                        src="/assets/images/process-team.jpg"
+                        src="/assets/images/process-team.webp"
                         alt="Team Work"
                         className="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-square"
                         data-alt="Team colla borating in a modern tech office environment" 
