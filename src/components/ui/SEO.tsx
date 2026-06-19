@@ -11,8 +11,8 @@ interface SEOProps {
 const DEFAULTS = {
   title: 'LineaSoftTech - Desarrollo Web, Sistemas y Soporte Técnico',
   description: 'Creamos páginas web, aplicaciones y sistemas para emprendedores y pequeños negocios. Desarrollo web, automatización y soporte técnico.',
-  image: '/logo.png',
-  url: 'https://lineasofttech.com/',
+  image: 'https://linea-soft-tech-web.vercel.app/logo.png',
+  url: 'https://linea-soft-tech-web.vercel.app/',
   favicon: '/favicon.png',
 };
 
