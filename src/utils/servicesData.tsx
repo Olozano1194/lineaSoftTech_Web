@@ -1,7 +1,7 @@
 import { MdOutlineSupportAgent, MdWeb } from "react-icons/md";
 import { FaRobot } from "react-icons/fa6";
 import { IoMdCode, IoMdSettings } from "react-icons/io";
-import type { Service } from "../utils/models/service.types";
+import type { Service } from "./models/service.types";
 
 export const services: Service[] = [
     {
