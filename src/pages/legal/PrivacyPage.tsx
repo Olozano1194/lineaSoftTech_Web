@@ -36,14 +36,14 @@ const PrivacyPage = () => {
                     <section>
                         <h2 className="font-bold text-text-primary text-lg mb-3">3. Protección de datos</h2>
                         <p>
-                            Implementamos medidas de seguridad apropiadas para proteger su información personal contra accesos no autorizados, alteration, divulgación o destrucción. Sus datos se almacenan de forma segura y solo personal autorizado tiene acceso a ellos.
+                            Implementamos medidas de seguridad apropiadas para proteger su información personal contra accesos no autorizados, alteración, divulgación o destrucción. Sus datos se almacenan de forma segura y solo personal autorizado tiene acceso a ellos.
                         </p>
                     </section>
 
                     <section>
                         <h2 className="font-bold text-text-primary text-lg mb-3">4. Compartir información</h2>
                         <p>
-                            <strong>No compartimos</strong> su información personal con terceros. Su datos son utilizados exclusivamente por LineaSoftTech para los fines descritos en esta política.
+                            <strong>No compartimos</strong> su información personal con terceros. Sus datos son utilizados exclusivamente por LineaSoftTech para los fines descritos en esta política.
                         </p>
                     </section>
 
