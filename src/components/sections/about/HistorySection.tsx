@@ -34,7 +34,7 @@ const HistorySection = () => {
                         </p>
                         <div className="gap-4 grid grid-cols-2 pt-4">
                             <div className="border border-text-footer-primary/10 bg-text-footer-primary/5 p-4 rounded-xl">
-                                <span className="mg-2 text-btn-primary">
+                                <span className="mb-2 text-btn-primary">
                                     <FaLightbulb className="text-2xl mb-2" />
                                 </span>
                                 <h4 className="font-bold text-text-primary mb-2">Aprendizaje constante</h4>
@@ -43,7 +43,7 @@ const HistorySection = () => {
                                 </p>
                             </div>
                             <div className="border border-text-footer-primary/10 bg-text-footer-primary/5 p-4 rounded-xl">
-                                <span className="mg-2 text-btn-primary">
+                                <span className="mb-2 text-btn-primary">
                                     <FaHandshake className="text-2xl mb-2" />
                                 </span>
                                 <h4 className="font-bold text-text-primary mb-2">Cercanía</h4>
