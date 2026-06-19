@@ -23,15 +23,12 @@ const Footer = () => {
                     </p>
                     {/* redes */}
                     <div className="flex gap-4">
-                        <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blank' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                             <FaLinkedin />
                         </a>
-                        <a href="https://github.com/Olozano1194" target='_blank' className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                        <a href="https://github.com/Olozano1194" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
                             <FaGithub />
                         </a>
-                        {/* <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
-                            <FaInstagram />
-                        </a> */}
                     </div>
                 </div>
                 {/* Services */}
@@ -54,7 +51,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <span>
-                                <button className='cursor-pointer' onClick={() => scrollToSection('comoTrabajamos')}>Como trabajamos</button>
+                                <button className='cursor-pointer' onClick={() => scrollToSection('comoTrabajamos')}>Cómo trabajamos</button>
                             </span>
                         </li>                        
                     </ul>
