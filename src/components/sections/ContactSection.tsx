@@ -31,9 +31,12 @@ const ContactSection = () => {
                 },
                 body: JSON.stringify(data)
             });
-            const result = await response.json();
+            if (!response.ok) {
+              const text = await response.text();
+              throw new Error(text || "Error al enviar el mensaje");
+            }
 
-            if (!response.ok) throw new Error(result.message || "Error al enviar el mensaje");
+            await response.json();
 
             toast.success("Mensaje enviado. Te responderemos en menos de 24 horas.");
             reset();
