@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
     --font-roboto: "Roboto", sans-serif;
     /* bg */
-    --color-bg-light: rgb(245 246 248 / var(--tw-bg-opacity, 1));
-    --color-bg-footer: rgb(15 21 35 / var(--tw-bg-opacity, 1));
-    --color-bg-primary-fixed: rgb(220 225 255 / var(--tw-bg-opacity, 1));
-    --color-bg-tertiary-fixed: rgb(186 230 253 / var(--tw-bg-opacity, 1));
-    --color-bg-error-container: rgb(255 218 214 / var(--tw-bg-opacity, 1));
+    --color-bg-light: #f5f6f8;
+    --color-bg-footer: #0f1523;
+    --color-bg-primary-fixed: #dce1ff;
+    --color-bg-tertiary-fixed: #bae6fd;
+    --color-bg-error-container: #ffdad6;
     /* btn, icons, hovers */
-    --color-btn-primary: rgb(0 81 255 / var(--tw-bg-opacity, 1));
+    --color-btn-primary: #0051ff;
     /* Title subtitle */
-    --color-text-primary: rgb(15 23 42 / var(--tw-text-opacity, 1));
+    --color-text-primary: #0f172a;
     /* Text */
-    --color-text-secondary: rgb(71 85 105 / var(--tw-text-opacity, 1));
-    --color-text-tertiary: rgb(14 115 255 / var(--tw-text-opacity, 1));
-    --color-text-error: rgb(239 68 68 / var(--tw-text-opacity, 1));
+    --color-text-secondary: #475569;
+    --color-text-tertiary: #0e73ff;
+    --color-text-error: #ef4444;
     /* text footer */
-    --color-text-footer-primary: rgb(148 163 184 / var(--tw-text-opacity, 1));
-    --color-text-footer-secondary: rgb(100 116 139 / var(--tw-text-opacity, 1));    
+    --color-text-footer-primary: #94a3b8;
+    --color-text-footer-secondary: #64748b;    
 }
