@@ -6,6 +6,12 @@ interface BtnPriceProps {
 
 const BtnPrice = ({ planName }: BtnPriceProps) => {
     const WA_PHONE = import.meta.env.VITE_WA_PHONE;
+
+    if (!WA_PHONE) {
+        console.warn("BtnPrice: VITE_WA_PHONE no está configurado");
+        return null;
+    }
+
     const handleQuote = () => {
         const message = encodeURIComponent(
             `¡Hola! Estoy interesado en el "${planName}". ¿Podrían darme una cotización personalizada?`

@@ -23,6 +23,10 @@ const ContactSection = () => {
         setIsLoading(true);
         try {
             const contactUrl = import.meta.env.VITE_CONTACTFORM_URL;
+            if (!contactUrl) {
+                toast.error("Error de configuración del formulario");
+                return;
+            }
             const response = await fetch(contactUrl, {
                 method: "POST",
                 headers: {

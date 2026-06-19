@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { SEO } from "../components/ui/SEO";
+import { HEADER_OFFSET } from "../components/ui/ScrollToTop";
 import HeroSection from "../components/sections/HeroSection";
 import ServicesSection from "../components/sections/ServicesSection";
 import ProcessSection from "../components/sections/ProcessSection";
@@ -19,25 +20,24 @@ const HomePage = () => {
             const id = hash.replace("#", "");
             const element = document.getElementById(id);
             if (element) {
-                const headerOffset = 64;
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-                const offsetPosition = elementPosition - headerOffset;
+                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - HEADER_OFFSET;
 
-                setTimeout(() => {
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: "smooth",
-                    });
-                }, 100);
+                const raf = requestAnimationFrame(() =>
+                    requestAnimationFrame(() => {
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth",
+                        });
+                    })
+                );
+                return () => cancelAnimationFrame(raf);
             }
         }
     }, [location.pathname, location.hash]);
     return (
         <>
-            <SEO
-                image="/logo.png"
-                favicon="/favicon.png"                 
-            />
+            <SEO />
             <HeroSection />
             <ServicesSection />
             <WorkSection />
