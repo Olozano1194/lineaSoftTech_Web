@@ -71,10 +71,10 @@ const Header = () => {
                     </div>
                     {/* Botón menú móvil */}
                     <div className="sm:hidden">
-                        <DisclosureButton className="p-2 rounded-b-md hover:bg-btn-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-btn-primary">
-                            <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
-                            <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
-                        </DisclosureButton>
+<DisclosureButton className="group p-2 rounded-b-md hover:bg-btn-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-btn-primary">
+    <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
+    <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
+</DisclosureButton>
                     </div>                
                 {/* Desktop Navigation */}
                 <div className="hidden items-center justify-end gap-8 sm:flex lg:gap-12">
