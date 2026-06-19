@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { SEO } from "../components/ui/SEO";
 import HeroSection from "../components/sections/HeroSection";
 import ServicesSection from "../components/sections/ServicesSection";
@@ -9,7 +10,9 @@ import ContactSection from "../components/sections/ContactSection";
 import PlanSolutionSection from "../components/sections/PlanSolutionSection";
 
 const HomePage = () => {
-    // Scroll a sección si hay hash en la URL
+    const location = useLocation();
+
+    // Scroll a sección si hay hash en la URL (al navegar desde otra página o cambiar hash)
     useEffect(() => {
         const hash = window.location.hash;
         if (hash) {
@@ -28,7 +31,7 @@ const HomePage = () => {
                 }, 100);
             }
         }
-    }, []);
+    }, [location.pathname, location.hash]);
     return (
         <>
             <SEO

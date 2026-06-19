@@ -42,7 +42,12 @@ const Header = () => {
     ];
 
     const handleNavClick = (href: string) => {
-        scrollToSection(getSectionId(href));
+        const sectionId = getSectionId(href);
+        if (isHome) {
+            scrollToSection(sectionId);
+        } else {
+            navigate(`/#${sectionId}`);
+        }
     };
 
     return (
@@ -77,7 +82,11 @@ const Header = () => {
                         {navigation.map((item) => (
                             <a
                                 key={item.name}
-                                href={item.href}
+                                href={isHome ? item.href : `/${item.href}`}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleNavClick(item.href);
+                                }}
                                 aria-current={item.current ? 'page' : undefined}
                                 className={classNames(
                                     item.current ? 'hover:text-btn-primary text-text-secondary transition-colors' : 'text-text-secondary hover:text-btn-primary transition-colors',
@@ -91,7 +100,13 @@ const Header = () => {
                     {/* Button Contact - Desktop */}
                     <div className="shrink-0">
                         <BtnContact
-                            onClick={() => scrollToSection('contacto')}
+                            onClick={() => {
+                                if (isHome) {
+                                    scrollToSection('contacto');
+                                } else {
+                                    navigate('/#contacto');
+                                }
+                            }}
                         >
                             Contactar
                         </BtnContact>
@@ -124,7 +139,11 @@ const Header = () => {
                     <BtnContact
                         onClick={() => {
                             close();
-                            scrollToSection('contacto');
+                            if (isHome) {
+                                scrollToSection('contacto');
+                            } else {
+                                navigate('/#contacto');
+                            }
                         }}
                     >
                         Contactar
