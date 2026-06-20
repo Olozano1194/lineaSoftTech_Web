@@ -28,7 +28,7 @@
 - Tests: 6 tests (2 unit + 2 smoke) — todos pasando
 - Artifacts SDD completos en `openspec/changes/refactor-section-components/`
 
-### ✅ `(archived 20 Jun 2026)` — feat(project-detail-pages): páginas de detalle de proyectos en /proyecto/:slug
+### ✅ `08c8105` — feat(projects): agregar páginas de detalle en /proyecto/:slug con carrusel y datos reales
 
 **Archivos:** `ProjectDetailPage.tsx` (nuevo), `types.ts`, `projectsData.ts`, `ProjectCard.tsx`, `App.tsx`
 
