@@ -1,5 +1,19 @@
 # Historial de Cambios
 
+## 20 Jun 2026
+
+### `(working tree)` — feat(error-boundaries): Error Boundaries con fallback brandeado
+
+**Archivos:** `main.tsx`, `LayoutAdmin.tsx`, `ErrorFallback.tsx`, `ErrorFallback.test.tsx`, `vitest.config.ts`
+
+- Instalado `react-error-boundary` para manejo de errores de render
+- Creado `ErrorFallback.tsx` — componente brandeado con logo, mensaje, botón reintentar y contacto
+- **Per-section**: LayoutAdmin envuelve `<Outlet>` con `<ErrorBoundary>` — si una página explota, Header/Footer sobreviven
+- **Global**: main.tsx envuelve `<Router>` con `<ErrorBoundary>` — última línea de defensa
+- `<Toaster>` movido dentro de `<Router>` para acceso a navegación desde el fallback
+- Tests: 6 tests (3 unit + 3 integración) — todos pasando
+- Artifacts SDD completos en `openspec/changes/error-boundaries/`
+
 ## 19 Jun 2026
 
 ### `0884859` — fix(seo): actualizar dominio y corregir OG images
