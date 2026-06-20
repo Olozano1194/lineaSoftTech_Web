@@ -18,7 +18,7 @@ function LayoutAdmin() {
             <div className="min-h-screen flex flex-col">
                 <div className="xl:col-span-5">
                     <Header />
-                    <main className="flex-1 overflow-y-auto pt-16">
+                    <main aria-label="Contenido principal" className="flex-1 overflow-y-auto pt-16">
                         <ErrorBoundary
                           FallbackComponent={ErrorFallback}
                           onError={sectionErrorHandler}

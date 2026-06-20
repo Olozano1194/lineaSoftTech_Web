@@ -30,7 +30,7 @@ const PlanCard = ({
         </span>
       )}
       <div className="bg-btn-primary/10 p-3 rounded-lg">
-        <Icon className="text-btn-primary text-2xl" />
+        <Icon className="text-btn-primary text-2xl" aria-hidden="true" />
       </div>
       <h3 className="text-xl font-bold mt-4">{title}</h3>
       <p className="text-text-secondary text-sm mt-2">{description}</p>
@@ -44,7 +44,7 @@ const PlanCard = ({
       <ul className="flex flex-col gap-3 w-full">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start gap-2">
-            <FaCheckCircle className="text-btn-primary mt-1 shrink-0" />
+            <FaCheckCircle className="text-btn-primary mt-1 shrink-0" aria-hidden="true" />
             <span>{feature}</span>
           </li>
         ))}

@@ -51,7 +51,7 @@ const Header = () => {
     };
 
     return (
-        <Disclosure as="nav" className="backdrop-blur-md bg-white/30 border-b border-slate-200/60 fixed w-full text-text-primary top-0 z-50">
+        <Disclosure as="nav" aria-label="Navegación principal" className="backdrop-blur-md bg-white/30 border-b border-slate-200/60 fixed w-full text-text-primary top-0 z-50">
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-16">
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo y nombre */}
@@ -59,7 +59,7 @@ const Header = () => {
                         <img
                             className="rounded-lg size-9 h-8 w-auto cursor-pointer"
                             src={logo}
-                            alt="logo"
+                            alt="LineaSoftTech"
                             loading="eager"
                             onClick={() => handleLogoClick(isHome, navigate)}
                         />

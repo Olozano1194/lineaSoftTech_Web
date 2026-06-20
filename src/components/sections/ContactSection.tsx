@@ -66,11 +66,11 @@ const ContactSection = () => {
                 </div>
                 <div className="space-y-6">
                     <p className="flex items-center gap-4 text-slate-700">
-                        <MdOutlineEmail className="w-12 h-12 rounded-full bg-btn-primary/10 p-2 text-btn-primary flex items-center justify-center" />
+                        <MdOutlineEmail className="w-12 h-12 rounded-full bg-btn-primary/10 p-2 text-btn-primary flex items-center justify-center" aria-hidden="true" />
                         <span className="font-bold">lineasofttech@gmail.com</span>
                     </p>
                     <p className="flex items-center gap-4 text-slate-700">
-                        <MdOutlinePhone className="w-12 h-12 rounded-full bg-green-500/10 p-2 text-green-600 flex items-center justify-center" />
+                        <MdOutlinePhone className="w-12 h-12 rounded-full bg-green-500/10 p-2 text-green-600 flex items-center justify-center" aria-hidden="true" />
                         <span className="font-bold">+57 302 112 0794</span>
                     </p>
                 </div>
@@ -82,7 +82,7 @@ const ContactSection = () => {
                         rel="noopener noreferrer" 
                         className="w-full bg-green-500 cursor-pointer font-bold gap-3 flex items-center px-8 py-4 text-lg text-white shadow-green-500/20 transition-all rounded-xl hover:bg-green-600 hover:scale-105 md:w-sm"
                     >
-                        <MdOutlineCircle className="bg-white text-sm rounded-full" />
+                        <MdOutlineCircle className="bg-white text-sm rounded-full" aria-hidden="true" />
                         Escríbenos por WhatsApp
                     </a>
                 </div>

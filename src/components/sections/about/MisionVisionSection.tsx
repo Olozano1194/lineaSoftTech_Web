@@ -13,7 +13,7 @@ const MisionVisionSection = () => {
                     <article className="border border-text-footer-primary/20 bg-white flex flex-col items-center p-8 rounded-3xl shadow-sm text-center transition-shadow hover:shadow-md">
                         <div className="bg-bg-primary-fixed flex h-16 items-center justify-center mb-6 rounded-2xl w-16">
                             <span className="text-btn-primary text-3xl">
-                                <MdAdsClick />
+                                <MdAdsClick aria-hidden="true" />
                             </span>
                         </div>
                         <h3 className="font-bold mb-4 text-xl text-text-primary">Misión</h3>
@@ -25,7 +25,7 @@ const MisionVisionSection = () => {
                     <article className="border border-text-footer-primary/20 bg-white flex flex-col items-center p-8 rounded-3xl shadow-sm text-center transition-shadow hover:shadow-md">
                         <div className="bg-bg-tertiary-fixed flex h-16 items-center justify-center mb-6 rounded-2xl w-16">
                             <span className="text-text-tertiary text-3xl">
-                                <MdVisibility />
+                                <MdVisibility aria-hidden="true" />
                             </span>
                         </div>
                         <h3 className="font-bold mb-4 text-xl text-text-primary">Visión</h3>
@@ -37,7 +37,7 @@ const MisionVisionSection = () => {
                     <article className="border border-text-footer-primary/20 bg-white flex flex-col items-center p-8 rounded-3xl shadow-sm text-center transition-shadow hover:shadow-md">
                         <div className="bg-bg-error-container flex h-16 items-center justify-center mb-6 rounded-2xl w-16">
                             <span className="text-text-error text-3xl">
-                                <MdFavorite />
+                                <MdFavorite aria-hidden="true" />
                             </span>
                         </div>
                         <h3 className="font-bold mb-4 text-xl text-text-primary">Valores</h3>

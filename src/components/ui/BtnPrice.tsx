@@ -25,7 +25,7 @@ const BtnPrice = ({ planName }: BtnPriceProps) => {
                 onClick={handleQuote}
                 className="bg-btn-primary cursor-pointer font-bold flex gap-1.5 h-12 items-center justify-center mt-4 px-4 rounded-lg text-white text-sm transition-all w-full hover:bg-btn-primary/90"
             >
-                <MdOutlineChat className="text-lg" />Cotización personalizada            
+                <MdOutlineChat className="text-lg" aria-hidden="true" />Cotización personalizada            
             </button>
             <p className="text-[10px] text-slate-400 text-center mt-1.5 leading-tight">
                 Te redirige a WhatsApp con el mensaje listo

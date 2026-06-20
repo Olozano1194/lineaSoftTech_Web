@@ -13,7 +13,7 @@ const Error404 = () => {
     return (
         <main className="w-full min-h-screen flex flex-col justify-center items-center">
             <div className="text-center text-text-primary font-bold items-center flex flex-col">
-                <span className='w-full flex flex-col justify-center items-center text-5xl md:w-96'><ExclamationTriangleIcon className="w-48 text-yellow-400" />Error 404</span>
+                <span className='w-full flex flex-col justify-center items-center text-5xl md:w-96'><ExclamationTriangleIcon className="w-48 text-yellow-400" aria-hidden="true" />Error 404</span>
                 <h1 className='text-xl font-bold pt-10 pb-4 md:text-2xl xl:text-4xl'>¡Oops! Página no encontrada</h1>
                 <p className='text-md font-semibold px-3 pb-3 md:text-lg xl:text-2xl'>
                     Lo sentimos, la página que estás buscando no existe.

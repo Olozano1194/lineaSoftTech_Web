@@ -32,7 +32,7 @@ const ProcessSection = () => {
                 <figure className="relative lg:max-w-xl">
                     <img 
                         src="/assets/images/process-team.webp"
-                        alt="Team Work"
+                        alt="Equipo de desarrollo colaborando en un espacio de trabajo moderno"
                         className="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-square"
                         loading="lazy"
                     />

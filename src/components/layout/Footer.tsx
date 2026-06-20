@@ -23,11 +23,11 @@ const Footer = () => {
                     </p>
                     {/* redes */}
                     <div className="flex gap-4">
-                        <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
-                            <FaLinkedin />
+                        <a href="https://www.linkedin.com/in/olozanobocanegra" target='_blank' rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                            <FaLinkedin aria-hidden="true" />
                         </a>
-                        <a href="https://github.com/Olozano1194" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
-                            <FaGithub />
+                        <a href="https://github.com/Olozano1194" target='_blank' rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-btn-primary transition-colors">
+                            <FaGithub aria-hidden="true" />
                         </a>
                     </div>
                 </div>
@@ -61,10 +61,10 @@ const Footer = () => {
                     <h5 className="font-bold mb-6">Contacto</h5>
                     <ul className="space-y-4 text-text-footer-primary text-sm">
                         <li className='flex gap-1 items-center'>
-                            <MdEmail />lineasofttech@gmail.com
+                            <MdEmail aria-hidden="true" />lineasofttech@gmail.com
                         </li>
                         <li className='flex gap-1 items-center'>
-                            <CiLocationOn />Purificación, Colombia
+                            <CiLocationOn aria-hidden="true" />Purificación, Colombia
                         </li>
                     </ul>
                 </div>

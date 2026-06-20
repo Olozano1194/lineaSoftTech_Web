@@ -12,7 +12,7 @@ function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
           className="mx-auto h-16 w-auto"
         />
 
-        <FaExclamationTriangle className="mx-auto text-4xl text-text-error" />
+        <FaExclamationTriangle className="mx-auto text-4xl text-text-error" aria-hidden="true" />
 
         <h2 className="text-2xl font-bold text-text-primary">
           Algo salió mal

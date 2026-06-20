@@ -55,6 +55,7 @@ const FAQSection = () => {
                                 </span>
                                 <MdArrowForwardIos
                                     className={`transition-transform duration-300 ${open ? "rotate-90" : ""}`}
+                                    aria-hidden="true"
                                 />
                             </DisclosureButton>
                             <DisclosurePanel className="p-4 text-text-secondary">

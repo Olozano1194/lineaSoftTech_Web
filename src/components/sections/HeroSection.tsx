@@ -28,7 +28,7 @@ const HeroSection = () => {
                             onClick={() => scrollToSection('servicios')}
                             className="flex bg-btn-primary cursor-pointer font-bold gap-x-1.5 items-center px-8 py-4 text-white text-lg transition-all rounded-lg shadow-lg shadow-btn-primary/20 hover:bg-btn-primary/90 hover:scale-105 md:text-lg"
                         >
-                            Ver Servicios <ArrowRightIcon className="w-5 h-5" />
+                            Ver Servicios <ArrowRightIcon className="w-5 h-5" aria-hidden="true" />
                         </button>
                         <button
                             onClick={() => scrollToSection('contacto')}
@@ -47,7 +47,7 @@ const HeroSection = () => {
                                 src="/assets/images/hero-showcase.webp"
                                 className="w-full h-full object-cover mix-blend-multiply opacity-80" alt="Interface Showcase"
                                 loading="eager"
-                                data-alt="Dashboard analytics and modern software interface"
+
                             />
                         </div>
                         <div className="absolute inset-0 bg-linear-to-t from-btn-primary/20 to-transparent"></div>
