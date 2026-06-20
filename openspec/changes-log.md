@@ -14,6 +14,20 @@
 - Tests: 6 tests (3 unit + 3 integración) — todos pasando
 - Artifacts SDD completos en `openspec/changes/error-boundaries/`
 
+### `(working tree)` — refactor(sections): extraer PlanCard, ProcessStep y TeamMemberCard
+
+**Archivos:** `PlanCard.tsx`, `ProcessStep.tsx`, `TeamMemberCard.tsx`, `PlanSolutionSection.tsx`, `ProcessSection.tsx`, `TeamSection.tsx`
+
+- Creado `PlanCard` — card de plan reutilizable con icono, precio, features, badge "Más Popular" y BtnPrice
+- Creado `ProcessStep` — step numerado con círculo, título y descripción
+- Creado `TeamMemberCard` — card de miembro con imagen, nombre, rol y descripción
+- `PlanSolutionSection.tsx`: -69 líneas, 3 cards inline → 3× `<PlanCard>`
+- `ProcessSection.tsx`: -13 líneas, 4 steps inline → 4× `<ProcessStep>`
+- `TeamSection.tsx`: -15 líneas, 2 miembros inline → 2× `<TeamMemberCard>`
+- ~97 líneas de duplicación eliminadas en total
+- Tests: 6 tests (2 unit + 2 smoke) — todos pasando
+- Artifacts SDD completos en `openspec/changes/refactor-section-components/`
+
 ## 19 Jun 2026
 
 ### `0884859` — fix(seo): actualizar dominio y corregir OG images
