@@ -1,6 +1,5 @@
-import BtnPrice from "../ui/BtnPrice";
+import PlanCard from "../ui/PlanCard";
 import { MdLanguage, MdStorefront, MdSpeed } from "react-icons/md";
-import { FaCheckCircle } from "react-icons/fa";
 
 
 const PlanSolutionSection = () => {
@@ -12,105 +11,48 @@ const PlanSolutionSection = () => {
                     <p>Ofrecemos soluciones tecnológicas adaptadas a las necesidades de emprendedores y pequeños negocios. Elige el camino hacia tu transformación digital.</p>
                 </div>
                 <article className="gap-8 grid grid-cols-1 md:grid-cols-3">
-                    {/* Plan 1 */}
-                    <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md md:p-6 lg:p-8">
-                        <section className="flex flex-col gap-2">
-                            <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
-                                <span className="text-btn-primary"><MdLanguage /></span>
-                            </div>
-                            <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Presencia Web</h3>
-                            <p className="text-text-secondary text-sm">Ideal para profesionales que buscan visibilidad inmediata.</p>
-                        </section>
-                        <div className="border-y border-slate-100 py-2">
-                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-3xl lg:text-4xl">
-                                <span className="font-semibold pr-2 text-sm text-text-secondary">Desde</span> 280k <span className="font-semibold pl-2 text-sm text-text-footer-secondary">COP</span>
-                            </p>
-                        </div>
-                        <ul className="flex flex-col gap-4 grow">
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Landing page profesional</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Diseño Responsive</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Formulario de contacto</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Botón directo de WhatsApp</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center "><FaCheckCircle className="text-green-500 text-lg" />Configuración inicial SEO</span>
-                            </li>
-                        </ul>
-                        <BtnPrice planName="Plan Presencia Web" />
-                    </article>
-                    {/* Plan 2 */}
-                    <article className="bg-white border-2 border-btn-primary flex flex-col gap-6 p-8 rounded-xl scale-105 shadow-sm transition-shadow z-10 hover:shadow-md md:p-6 lg:p-8">
-                        <section className="absolute bg-btn-primary font-bold -left-1 px-4 py-2 text-xs text-white tracking-wider -top-3 translate-x-30 rounded-full uppercase md:text-sm md:translate-x-15 md:-top-5 lg:translate-x-28">
-                            Más Popular
-                        </section>
-                        <section className="flex flex-col gap-2">
-                            <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
-                                <span className="text-btn-primary"><MdStorefront /></span>
-                            </div>
-                            <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Negocio Digital</h3>
-                            <p className="text-text-secondary text-sm">Transforma tus procesos y gestiona tu contenido.</p>
-                        </section>
-                        <div className="border-y border-slate-100 py-2">
-                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-3xl lg:text-4xl">
-                                <span className="font-semibold pr-2 text-sm text-text-secondary">Desde</span> 900k <span className="font-semibold pl-2 text-sm text-text-footer-secondary">COP</span>
-                            </p>
-                        </div>
-                        <ul className="flex flex-col gap-4 grow">
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Sitio Web Multipágina completo</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Panel de administración privado</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Base de datos estructurada</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Formularios personalizados</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center "><FaCheckCircle className="text-green-500 text-lg" />Soporte técnico prioritario</span>
-                            </li>
-                        </ul>
-                        <BtnPrice planName="Plan Negocio Digital" />
-                    </article>
-                    {/* Plan 3 */}
-                    <article className="bg-white border border-slate-200 flex flex-col gap-6 p-8 rounded-xl shadow-sm transition-shadow hover:shadow-md md:p-6 lg:p-8">
-                        <section className="flex flex-col gap-2">
-                            <div className="bg-btn-primary/10 p-3 rounded-lg w-fit">
-                                <span className="text-btn-primary"><MdSpeed /></span>
-                            </div>
-                            <h3 className="font-bold leading-tight mt-2 text-text-primary text-xl">Plan Optimización Web</h3>
-                            <p className="text-text-secondary text-sm">Mejora el rendimiento de tu sitio actual.</p>
-                        </section>
-                        <div className="border-y border-slate-100 py-2">
-                            <p className="font-black flex gap-1 items-center justify-center text-text-primary text-lg tracking-tighter md:text-3xl lg:text-4xl">
-                                <span className="font-semibold pr-2 text-sm text-text-secondary">Desde</span> 200k <span className="font-semibold pl-2 text-sm text-text-footer-secondary">COP</span>
-                            </p>
-                        </div>
-                        <ul className="flex flex-col gap-4 grow">
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Mejora de velocidad de carga</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Optimización para dispositivos móviles</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Corrección de errores (Bugs)</span>
-                            </li>
-                            <li className="text-slate-700 text-sm">
-                                <span className="flex font-semibold gap-3 items-center"><FaCheckCircle className="text-green-500 text-lg" />Auditoría SEO técnica</span>
-                            </li>
-                        </ul>
-                        <BtnPrice planName="Plan Optimización Web" />
-                    </article>
+                    <PlanCard
+                        icon={MdLanguage}
+                        title="Plan Presencia Web"
+                        description="Ideal para profesionales que buscan visibilidad inmediata."
+                        priceFrom={280000}
+                        features={[
+                            "Landing page profesional",
+                            "Diseño Responsive",
+                            "Formulario de contacto",
+                            "Botón directo de WhatsApp",
+                            "Configuración inicial SEO",
+                        ]}
+                        planName="Plan Presencia Web"
+                    />
+                    <PlanCard
+                        icon={MdStorefront}
+                        title="Plan Negocio Digital"
+                        description="Transforma tus procesos y gestiona tu contenido."
+                        priceFrom={900000}
+                        features={[
+                            "Sitio Web Multipágina completo",
+                            "Panel de administración privado",
+                            "Base de datos estructurada",
+                            "Formularios personalizados",
+                            "Soporte técnico prioritario",
+                        ]}
+                        planName="Plan Negocio Digital"
+                        isPopular
+                    />
+                    <PlanCard
+                        icon={MdSpeed}
+                        title="Plan Optimización Web"
+                        description="Mejora el rendimiento de tu sitio actual."
+                        priceFrom={200000}
+                        features={[
+                            "Mejora de velocidad de carga",
+                            "Optimización para dispositivos móviles",
+                            "Corrección de errores (Bugs)",
+                            "Auditoría SEO técnica",
+                        ]}
+                        planName="Plan Optimización Web"
+                    />
                 </article>
             </div>
         </section>

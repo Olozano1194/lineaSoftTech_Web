@@ -1,3 +1,5 @@
+import TeamMemberCard from "../../ui/TeamMemberCard";
+
 const TeamSection = () => {
     return (
         <section className="bg-white px-6 py-24">
@@ -12,45 +14,20 @@ const TeamSection = () => {
                     </div>
                 </div>
                 <section className="gap-8 grid grid-cols-1 md:grid-cols-2">
-                    {/* Team Member 1 */}
-                    <article className="group flex flex-col">
-                        <picture className="aspect-4/5 mb-6 overflow-hidden relative">
-                            <img
-                                className="duration-500 grayscale h-full object-cover rounded-3xl transition-all w-full group-hover:grayscale-0"
-                                src="/assets/fotoPerfil.webp"
-                                alt="Professional portrait of Oscar Lozano, Co-Fundador and Desarrollador Web"
-                                loading="lazy"
-                            />
-                        </picture>
-                        <h3 className="font-bold mb-1 text-xl text-text-primary">Oscar Lozano</h3>
-                        <p className="font-semibold mb-3 text-btn-primary">
-                            Co-Fundador & Desarrollador Web
-                        </p>
-                        <p className="mt-auto text-text-secondary text-sm">
-                            Me enfoco en el desarrollo web frontend, creando interfaces claras y funcionales.
-                            Me gusta entender cómo funcionan las tecnologías desde la base, lo que me permite construir soluciones bien organizadas y adaptadas a cada necesidad.
-                            También cuento con experiencia en soporte técnico y configuración de equipos.
-                        </p>
-                    </article>
-                    {/* Team Member 2 */}
-                    <article className="group flex flex-col">
-                        <picture className="aspect-4/5 mb-6 overflow-hidden relative">
-                            <img
-                                className="duration-500 grayscale h-full object-cover rounded-3xl transition-all w-full group-hover:grayscale-0"
-                                src="/assets/images/team-yeison.webp"
-                                alt="Professional portrait of Yeison Bocanegra, Co-Fundador and Especialista en Automatización"
-                                loading="lazy"
-                            />
-                        </picture>
-                        <h3 className="font-bold mb-1 text-xl text-text-primary">Yeison Bocanegra</h3>
-                        <p className="font-semibold mb-3 text-btn-primary">
-                            Co-Fundador & Especialista en Automatización
-                        </p>
-                        <p className="mt-auto text-text-secondary text-sm">
-                            Trabajo con herramientas de inteligencia artificial para agilizar procesos y encontrar soluciones más eficientes.
-                            Complemento esto con conocimientos de programación, lo que me permite aportar un enfoque práctico y moderno en cada proyecto.
-                        </p>
-                    </article>
+                    <TeamMemberCard
+                        name="Oscar Lozano"
+                        role="Co-Fundador & Desarrollador Web"
+                        description="Me enfoco en el desarrollo web frontend, creando interfaces claras y funcionales. Me gusta entender cómo funcionan las tecnologías desde la base, lo que me permite construir soluciones bien organizadas y adaptadas a cada necesidad. También cuento con experiencia en soporte técnico y configuración de equipos."
+                        image="/assets/fotoPerfil.webp"
+                        imageAlt="Professional portrait of Oscar Lozano, Co-Fundador and Desarrollador Web"
+                    />
+                    <TeamMemberCard
+                        name="Yeison Bocanegra"
+                        role="Co-Fundador & Especialista en Automatización"
+                        description="Trabajo con herramientas de inteligencia artificial para agilizar procesos y encontrar soluciones más eficientes. Complemento esto con conocimientos de programación, lo que me permite aportar un enfoque práctico y moderno en cada proyecto."
+                        image="/assets/images/team-yeison.webp"
+                        imageAlt="Professional portrait of Yeison Bocanegra, Co-Fundador and Especialista en Automatización"
+                    />
                 </section>
             </section>
         </section>
