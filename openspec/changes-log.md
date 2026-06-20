@@ -28,6 +28,17 @@
 - Tests: 6 tests (2 unit + 2 smoke) — todos pasando
 - Artifacts SDD completos en `openspec/changes/refactor-section-components/`
 
+### `(working tree)` — feat(a11y): agregar aria-label y aria-hidden en 14 archivos
+
+**Archivos:** Header.tsx, Footer.tsx, LayoutAdmin.tsx, ServiceCard.tsx, PlanCard.tsx, BtnPrice.tsx, ErrorFallback.tsx, HeroSection.tsx, FAQSection.tsx, ProcessSection.tsx, ContactSection.tsx, MisionVisionSection.tsx, HistorySection.tsx, Error404.tsx
+
+- Agregados `aria-label` en navegación principal, links sociales y main
+- Agregados `aria-hidden="true"` en 22 íconos decorativos
+- Corregido `alt` de logo (`logo` → `LineaSoftTech`)
+- Corregido `alt` de imagen en ProcessSection
+- Eliminado `data-alt` no estándar en HeroSection
+- Build: 0 errores
+
 ## 19 Jun 2026
 
 ### `0884859` — fix(seo): actualizar dominio y corregir OG images
