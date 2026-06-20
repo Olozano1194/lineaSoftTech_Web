@@ -28,6 +28,20 @@
 - Tests: 6 tests (2 unit + 2 smoke) — todos pasando
 - Artifacts SDD completos en `openspec/changes/refactor-section-components/`
 
+### ✅ `(archived 20 Jun 2026)` — feat(project-detail-pages): páginas de detalle de proyectos en /proyecto/:slug
+
+**Archivos:** `ProjectDetailPage.tsx` (nuevo), `types.ts`, `projectsData.ts`, `ProjectCard.tsx`, `App.tsx`
+
+- Nueva ruta `/proyecto/:slug` con página completa de detalle
+- ProjectCard ahora es un Link clickeable
+- Secciones condicionales: galería (carrusel), demo, repo, resultados
+- SEO dinámico por proyecto
+- Slugs manuales para URLs estables
+- Carrusel de imágenes con navegación y dots
+- Datos reales desde Portafolio (sin números inflados)
+- Build 0 errores — 12 tests pasando
+- Artifacts SDD archivados en `openspec/changes/archive/2026-06-20-project-detail-pages/`
+
 ### ✅ `(archived 20 Jun 2026)` — feat(a11y): agregar aria-label y aria-hidden en 14 archivos
 
 **Archivos:** Header.tsx, Footer.tsx, LayoutAdmin.tsx, ServiceCard.tsx, PlanCard.tsx, BtnPrice.tsx, ErrorFallback.tsx, HeroSection.tsx, FAQSection.tsx, ProcessSection.tsx, ContactSection.tsx, MisionVisionSection.tsx, HistorySection.tsx, Error404.tsx
