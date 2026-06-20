@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 // Page
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ProjectDetailPage from "./pages/ProjectDetailPage";
 // Legal Pages
 import TermsPage from "./pages/legal/TermsPage";
 import PrivacyPage from "./pages/legal/PrivacyPage";
@@ -17,6 +18,7 @@ function App() {
       <Route path="/" element={<LayoutAdmin />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="proyecto/:slug" element={<ProjectDetailPage />} />
         <Route path="terminos" element={<TermsPage />} />
         <Route path="privacidad" element={<PrivacyPage />} />
         <Route path="cookies" element={<CookiesPage />} />
