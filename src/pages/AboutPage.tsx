@@ -11,7 +11,7 @@ const AboutPage = () => {
                 title="Sobre Nosotros - LineaSoftTech"
                 description="Conoce al equipo de LineaSoftTech. Somos ingenieros de sistemas especializados en desarrollo web, automatización y soporte técnico para emprendedores y pequeños negocios."
                 image="/logo.png"
-                url="https://lineasofttech.com/about"
+                url="linea-soft-tech-web.vercel.app/about"
             />
             <HeroSection />
             <HistorySection />            
