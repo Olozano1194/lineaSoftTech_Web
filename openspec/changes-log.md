@@ -2,7 +2,7 @@
 
 ## 20 Jun 2026
 
-### `(working tree)` — feat(error-boundaries): Error Boundaries con fallback brandeado
+### `ad630cc` — feat(error-boundaries): Error Boundaries con fallback brandeado
 
 **Archivos:** `main.tsx`, `LayoutAdmin.tsx`, `ErrorFallback.tsx`, `ErrorFallback.test.tsx`, `vitest.config.ts`
 
