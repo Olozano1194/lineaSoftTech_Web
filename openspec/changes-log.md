@@ -2,6 +2,18 @@
 
 ## 21 Jun 2026
 
+### `(working tree)` — feat(ui): botón WhatsApp flotante + corregir número hardcodeado
+
+**Archivos:** `WhatsAppFloat.tsx`, `LayoutAdmin.tsx`, `ContactSection.tsx`, `index.css`
+
+- Creado `WhatsAppFloat` — botón flotante con FaWhatsapp, tooltip hover "¡Consúltanos!", animación fade-in sin loop
+- Integrado en `LayoutAdmin` como hermano de `ScrollToTop` (visible desde todas las rutas)
+- Corregido `ContactSection` — reemplazado número hardcodeado por `VITE_WA_PHONE`
+- Los 3 puntos de WhatsApp (BtnPrice, WhatsAppFloat, ContactSection) ahora usan la variable de entorno
+- Build: 0 errores TypeScript + vite build exitoso
+- SDD completo: 12/12 requisitos verificados
+- Artifacts SDD en `openspec/changes/whatsapp-float/`
+
 ### `(working tree)` — feat(trust-signals): TrustBar, StatusBadge y descripciones honestas
 
 **Archivos:** `TrustBar.tsx`, `StatusBadge.tsx`, `types.ts`, `projectsData.ts`, `HomePage.tsx`, `ProjectCard.tsx`, `ProjectDetailPage.tsx`
