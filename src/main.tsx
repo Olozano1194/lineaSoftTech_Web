@@ -5,6 +5,7 @@ import './index.css';
 import { Toaster, toast } from 'react-hot-toast';
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorFallback from './components/ui/ErrorFallback';
+import { Analytics } from '@vercel/analytics/react';
 import App from './App.tsx';
 
 function globalErrorHandler(error: Error, info: { componentStack?: string | null }) {
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')!).render(
     >
       <Router>
         <App />
+        <Analytics />
         <Toaster />
       </Router>
     </ErrorBoundary>
