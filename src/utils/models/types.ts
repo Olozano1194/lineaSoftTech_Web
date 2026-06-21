@@ -1,7 +1,10 @@
 export type ProjectCategory = "webapp" | "landing";
 
+export type ProjectStatus = "portfolio" | "pilot" | "completed";
+
 export interface Project {
   id: number;
+  status: ProjectStatus;
   title: string;
   category: ProjectCategory;
   tag: string;
