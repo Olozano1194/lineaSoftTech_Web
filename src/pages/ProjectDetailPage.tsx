@@ -1,15 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { MdArrowBack, MdCheckCircle, MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { MdArrowBack, MdCheckCircle, MdChevronLeft, MdChevronRight, MdClose } from "react-icons/md";
 import { SEO } from "../components/ui/SEO";
 import { projects } from "../utils/projectsData";
 
 const ProjectDetailPage = () => {
     const { slug } = useParams<{ slug: string }>();
     const project = projects.find((p) => p.slug === slug);
-    const [galleryIndex, setGalleryIndex] = useState(0);
-    const prevGallery = () => setGalleryIndex((i) => (i === 0 ? (project?.gallery.length ?? 1) - 1 : i - 1));
-    const nextGallery = () => setGalleryIndex((i) => (i === (project?.gallery.length ?? 1) - 1 ? 0 : i + 1));
+    const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+    const totalImages = project?.gallery.length ?? 0;
+
+    const openLightbox = (index: number) => setLightboxIndex(index);
+    const closeLightbox = () => setLightboxIndex(null);
+    const goToPrev = () => setLightboxIndex((prev) => prev !== null ? (prev - 1 + totalImages) % totalImages : null);
+    const goToNext = () => setLightboxIndex((prev) => prev !== null ? (prev + 1) % totalImages : null);
+
+    // Keyboard support for lightbox
+    useEffect(() => {
+        if (lightboxIndex === null) return;
+        const handleKey = (e: KeyboardEvent) => {
+            if (e.key === "Escape") closeLightbox();
+            if (e.key === "ArrowLeft") goToPrev();
+            if (e.key === "ArrowRight") goToNext();
+        };
+        window.addEventListener("keydown", handleKey);
+        document.body.style.overflow = "hidden";
+        return () => {
+            window.removeEventListener("keydown", handleKey);
+            document.body.style.overflow = "";
+        };
+    }, [lightboxIndex]);
 
     if (!project) {
         return (
@@ -128,56 +148,112 @@ const ProjectDetailPage = () => {
                         </div>
                     )}
 
-                    {/* Gallery — carousel */}
+                    {/* Gallery — grid + lightbox */}
                     {project.gallery.length > 0 && (
                         <div className="mb-10">
                             <h2 className="text-2xl font-black text-text-primary mb-4">
                                 Galería
                             </h2>
-                            <div className="relative rounded-2xl overflow-hidden bg-text-primary/5">
-                                <img
-                                    src={project.gallery[galleryIndex]}
-                                    alt={`${project.title} - Imagen ${galleryIndex + 1}`}
-                                    className="w-full aspect-16/9 object-cover transition-opacity duration-300"
-                                    loading="lazy"
-                                />
+                            <div className="space-y-6">
+                                {/* Primary image — large */}
+                                <div
+                                    className="group relative aspect-video rounded-2xl overflow-hidden bg-text-primary/5 cursor-pointer"
+                                    onClick={() => openLightbox(0)}
+                                >
+                                    <img
+                                        src={project.gallery[0]}
+                                        alt={`${project.title} - Imagen 1`}
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                        loading="lazy"
+                                    />
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                                        <span className="text-white/90 text-sm font-medium">
+                                            Ver galería completa
+                                        </span>
+                                    </div>
+                                </div>
 
+                                {/* Secondary images — grid */}
                                 {project.gallery.length > 1 && (
-                                    <>
-                                        <button
-                                            onClick={prevGallery}
-                                            className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
-                                            aria-label="Imagen anterior"
-                                        >
-                                            <MdChevronLeft className="text-2xl" />
-                                        </button>
-                                        <button
-                                            onClick={nextGallery}
-                                            className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
-                                            aria-label="Imagen siguiente"
-                                        >
-                                            <MdChevronRight className="text-2xl" />
-                                        </button>
-
-                                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                                            {project.gallery.map((_, index) => (
-                                                <button
-                                                    key={index}
-                                                    onClick={() => setGalleryIndex(index)}
-                                                    className={`w-2.5 h-2.5 rounded-full transition-all ${index === galleryIndex
-                                                            ? "bg-white scale-110"
-                                                            : "bg-white/40 hover:bg-white/70"
-                                                        }`}
-                                                    aria-label={`Ir a imagen ${index + 1}`}
+                                    <div className="grid grid-cols-2 gap-6">
+                                        {project.gallery.slice(1, 3).map((img, idx) => (
+                                            <div
+                                                key={idx}
+                                                className="group relative aspect-square rounded-2xl overflow-hidden bg-text-primary/5 cursor-pointer"
+                                                onClick={() => openLightbox(idx + 1)}
+                                            >
+                                                <img
+                                                    src={img}
+                                                    alt={`${project.title} - Imagen ${idx + 2}`}
+                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    loading="lazy"
                                                 />
-                                            ))}
-                                        </div>
-                                    </>
+                                                {/* Last visible tile — show remaining count */}
+                                                {idx === 1 && project.gallery.length > 3 && (
+                                                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+                                                        <span className="text-white text-3xl font-black">
+                                                            +{project.gallery.length - 3}
+                                                        </span>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
                                 )}
                             </div>
-                            <p className="text-text-secondary text-sm text-center mt-3">
-                                {galleryIndex + 1} / {project.gallery.length}
-                            </p>
+                        </div>
+                    )}
+
+                    {/* Lightbox */}
+                    {lightboxIndex !== null && (
+                        <div
+                            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+                            onClick={closeLightbox}
+                        >
+                            {/* Close */}
+                            <button
+                                onClick={closeLightbox}
+                                className="absolute top-4 right-4 z-10 text-white/80 hover:text-white transition-colors"
+                                aria-label="Cerrar"
+                            >
+                                <MdClose size={36} />
+                            </button>
+
+                            {/* Prev / Next */}
+                            {totalImages > 1 && (
+                                <>
+                                    <button
+                                        onClick={(e) => { e.stopPropagation(); goToPrev(); }}
+                                        className="absolute left-4 z-10 text-white/80 hover:text-white transition-colors"
+                                        aria-label="Imagen anterior"
+                                    >
+                                        <MdChevronLeft size={48} />
+                                    </button>
+                                    <button
+                                        onClick={(e) => { e.stopPropagation(); goToNext(); }}
+                                        className="absolute right-4 z-10 text-white/80 hover:text-white transition-colors"
+                                        aria-label="Imagen siguiente"
+                                    >
+                                        <MdChevronRight size={48} />
+                                    </button>
+                                </>
+                            )}
+
+                            {/* Image */}
+                            <img
+                                src={project.gallery[lightboxIndex]}
+                                className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg select-none"
+                                onClick={(e) => e.stopPropagation()}
+                                alt={`${project.title} - ${lightboxIndex + 1}`}
+                                draggable={false}
+                            />
+
+                            {/* Counter */}
+                            {totalImages > 1 && (
+                                <span className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 text-sm font-medium tracking-widest">
+                                    {lightboxIndex + 1} / {totalImages}
+                                </span>
+                            )}
                         </div>
                     )}
 
@@ -219,18 +295,7 @@ const ProjectDetailPage = () => {
                         >
                             Contáctame
                         </Link>
-                    </div>
-
-                    {/* Back link */}
-                    <div className="text-center">
-                        <Link
-                            to="/"
-                            className="inline-flex items-center gap-2 text-text-secondary hover:text-btn-primary font-medium transition-colors"
-                        >
-                            <MdArrowBack className="text-xl" />
-                            Volver a proyectos
-                        </Link>
-                    </div>
+                    </div>                    
                 </div>
             </section>
         </>
