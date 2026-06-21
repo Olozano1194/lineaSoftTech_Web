@@ -5,6 +5,7 @@ import ErrorFallback from "../components/ui/ErrorFallback";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import ScrollToTop from "../components/ui/ScrollToTop";
+import WhatsAppFloat from "../components/ui/WhatsAppFloat";
 
 function sectionErrorHandler(error: Error, info: { componentStack?: string | null }) {
   console.error('Section Error Boundary caught:', error, info);
@@ -15,6 +16,7 @@ function LayoutAdmin() {
     return (
         <>
             <ScrollToTop />
+            <WhatsAppFloat />
             <div className="min-h-screen flex flex-col">
                 <div className="xl:col-span-5">
                     <Header />

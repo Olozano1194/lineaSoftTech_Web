@@ -13,6 +13,8 @@ type FormData = {
 };
 
 
+const WA_PHONE = import.meta.env.VITE_WA_PHONE;
+
 const ContactSection = () => {
     const [isLoading, setIsLoading] = useState(false);
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
@@ -77,7 +79,7 @@ const ContactSection = () => {
                 {/* btn whatsapp */}
                 <div className="mt-8">
                     <a
-                        href="https://wa.me/573021120794"
+                        href={`https://wa.me/${WA_PHONE}`}
                         target="_blank"
                         rel="noopener noreferrer" 
                         className="w-full bg-green-500 cursor-pointer font-bold gap-3 flex items-center px-8 py-4 text-lg text-white shadow-green-500/20 transition-all rounded-xl hover:bg-green-600 hover:scale-105 md:w-sm"
