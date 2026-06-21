@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Project } from "../../utils/models/types";
+import StatusBadge from "../ui/StatusBadge";
 
 
 interface Props {
@@ -10,6 +11,9 @@ const ProjectCard = ({ project }: Props) => {
   return (
     <Link to={`/proyecto/${project.slug}`} prefetch="intent">
       <picture className="group relative overflow-hidden rounded-2xl bg-text-primary">
+        <div className="absolute top-3 left-3 z-10">
+          <StatusBadge status={project.status} />
+        </div>
         <img
           src={project.image}
           className="w-full aspect-4/3 object-cover opacity-90 group-hover:opacity-40 group-hover:scale-110 transition-all duration-500"

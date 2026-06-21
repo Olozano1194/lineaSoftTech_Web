@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { SEO } from "../components/ui/SEO";
 import { HEADER_OFFSET } from "../components/ui/ScrollToTop";
 import HeroSection from "../components/sections/HeroSection";
+import TrustBar from "../components/ui/TrustBar";
 import ServicesSection from "../components/sections/ServicesSection";
 import ProcessSection from "../components/sections/ProcessSection";
 import WorkSection from "../components/sections/WorkSection";
@@ -42,6 +43,7 @@ const HomePage = () => {
                 favicon="/favicon.png"                 
             />
             <HeroSection />
+            <TrustBar />
             <ServicesSection />
             <WorkSection />
             <ProcessSection />

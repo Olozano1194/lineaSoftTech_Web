@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { MdArrowBack, MdCheckCircle, MdChevronLeft, MdChevronRight, MdClose } from "react-icons/md";
 import { SEO } from "../components/ui/SEO";
+import StatusBadge from "../components/ui/StatusBadge";
 import { projects } from "../utils/projectsData";
 
 const ProjectDetailPage = () => {
@@ -82,9 +83,12 @@ const ProjectDetailPage = () => {
                 <div className="max-w-4xl mx-auto">
                     {/* Header: title, tag, role */}
                     <div className="mb-12">
-                        <span className="text-btn-primary text-sm font-bold uppercase mb-2 block">
-                            {project.tag}
-                        </span>
+                        <div className="flex items-center gap-3 mb-2">
+                            <span className="text-btn-primary text-sm font-bold uppercase">
+                                {project.tag}
+                            </span>
+                            <StatusBadge status={project.status} />
+                        </div>
                         <h1 className="text-4xl font-black text-text-primary mb-2">
                             {project.title}
                         </h1>
