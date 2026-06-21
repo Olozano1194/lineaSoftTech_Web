@@ -1,5 +1,20 @@
 # Historial de Cambios
 
+## 21 Jun 2026
+
+### `(working tree)` — feat(trust-signals): TrustBar, StatusBadge y descripciones honestas
+
+**Archivos:** `TrustBar.tsx`, `StatusBadge.tsx`, `types.ts`, `projectsData.ts`, `HomePage.tsx`, `ProjectCard.tsx`, `ProjectDetailPage.tsx`
+
+- Creado `TrustBar` — barra de confianza con 4 stats reales (+4 proyectos, +2 años, React·TS·Django, atención personalizada)
+- Creado `StatusBadge` — badge reutilizable con 3 estados: Demo (azul), Prueba piloto (ámbar), Completado (verde)
+- Agregado `ProjectStatus` union type (`"portfolio" | "pilot" | "completed"`) con campo `status` en `Project`
+- Actualizados datos: FiadoApp como `"pilot"` con mención a prueba piloto en comercio local, resto como `"portfolio"` sin clientes ficticios
+- Integración: TrustBar entre Hero y Services en HomePage, StatusBadge en ProjectCard y ProjectDetailPage
+- Build: 0 errores TypeScript + vite build exitoso
+- SDD completo: 17/17 escenarios verificados
+- Artifacts SDD en `openspec/changes/trust-signals/`
+
 ## 20 Jun 2026
 
 ### `ad630cc` — feat(error-boundaries): Error Boundaries con fallback brandeado
