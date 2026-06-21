@@ -37,7 +37,10 @@ const HomePage = () => {
     }, [location.pathname, location.hash]);
     return (
         <>
-            <SEO />
+            <SEO
+                image="/logo.png"
+                favicon="/favicon.png"                 
+            />
             <HeroSection />
             <ServicesSection />
             <WorkSection />
