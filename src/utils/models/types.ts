@@ -24,6 +24,8 @@ export interface Project {
   challenges: string;
   /** Solution description */
   solution: string;
+  /** Real-world backstory context (business-owner tone) */
+  context?: string;
   /** Key results / achievements */
   results: string[];
   /** Gallery image paths (empty if no gallery) */
