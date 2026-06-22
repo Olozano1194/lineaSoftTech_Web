@@ -69,36 +69,29 @@ const ProjectDetailPage = () => {
             />
 
             {/* Hero */}
-            <section className="relative w-full h-[50vh] min-h-80 md:min-h-100 overflow-hidden">
+            <section className="relative w-full h-[50vh] min-h-100 overflow-hidden">
                 <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-10 lg:p-16">
-                    <div className="max-w-4xl mx-auto">
-                        <div className="flex items-center gap-3 mb-2">
-                            <span className="text-white/80 text-xs md:text-sm font-bold uppercase tracking-wider">
-                                {project.tag}
-                            </span>
-                            <StatusBadge status={project.status} />
-                        </div>
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-2 leading-tight">
-                            {project.title}
-                        </h1>
-                        <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl line-clamp-2 md:line-clamp-none">
-                            {project.description}
-                        </p>
-                    </div>
-                </div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
             </section>
 
             {/* Content */}
             <section className="py-15 px-3.5 md:px-5 lg:px-16">
                 <div className="max-w-4xl mx-auto">
-                    {/* Role (title, tag, badge moved to hero overlay) */}
+                    {/* Header: title, tag, role */}
                     <div className="mb-12">
+                        <div className="flex items-center gap-3 mb-2">
+                            <span className="text-btn-primary text-sm font-bold uppercase">
+                                {project.tag}
+                            </span>
+                            <StatusBadge status={project.status} />
+                        </div>
+                        <h1 className="text-4xl font-black text-text-primary mb-2">
+                            {project.title}
+                        </h1>
                         <p className="text-text-secondary text-lg">{project.role}</p>
                     </div>
 
