@@ -115,6 +115,18 @@ const ProjectDetailPage = () => {
                         </p>
                     </div>
 
+                    {/* Real Context — conditional */}
+                    {project.context && (
+                        <div className="mb-10">
+                            <h2 className="text-2xl font-black text-text-primary mb-4">
+                                El problema real
+                            </h2>
+                            <p className="text-text-secondary leading-relaxed">
+                                {project.context}
+                            </p>
+                        </div>
+                    )}
+
                     {/* TechStack Pills */}
                     <div className="mb-10">
                         <h2 className="text-2xl font-black text-text-primary mb-4">
